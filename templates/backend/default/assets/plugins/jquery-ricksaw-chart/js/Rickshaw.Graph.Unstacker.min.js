@@ -1,0 +1,1 @@
+Rickshaw.namespace("Rickshaw.Graph.Unstacker"),Rickshaw.Graph.Unstacker=function(l){this.graph=l.graph;var e=this;this.graph.stackData.hooks.after.push({name:"unstacker",f:function(l){return e.graph.renderer.unstack?(l.forEach(function(l){l.forEach(function(l){l.y0=0})}),l):l}})};

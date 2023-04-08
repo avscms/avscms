@@ -1,0 +1,82 @@
+.easy-pie-custom {
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.easy-pie-percent {
+    display: inline-block;
+    line-height: 110px;
+    z-index: 2;
+    :after {
+        content: '%';
+        margin-left:0.1em;
+        font-size: .8em;
+    }
+}
+
+.mini-chart-wrapper {
+    display: block;
+    width: 100%;
+    padding: 19px 9px 0;
+    .chart-details-wrapper {
+        display: inline-block;
+        margin: 8px;
+        .chartname {
+            display: block;
+            font-size: 10.5px;
+            text-transform: uppercase;
+            color: #9A9A9A;
+        }
+        .chart-value {
+            display: block;
+            font-size: 14px;
+            color: #000000;
+        }
+    }
+    .mini-chart {
+        display: inline-block;
+        position: relative;
+        top: -10px;
+    }
+    &.donut {
+        .chart-details-wrapper {
+            float: left;
+            margin-top: 0;
+        }
+        .mini-chart {
+            float: left;
+        }
+    }
+}
+.legendColorBox {
+    & > div {
+        border: 0px !important;
+    }
+}
+.legendLabel {
+    line-height: 20px !important;
+}
+.rickshaw_legend {
+    display: block;
+    border-radius: 0px;
+    background-color: transparent;
+    .line {
+        margin-bottom: 10px;
+        .swatch {
+            margin: 0 8px;
+        }
+    }
+    .label {
+        color: #6F7B8A;
+    }
+    ul {
+        margin: 15px 16px;
+    }
+}

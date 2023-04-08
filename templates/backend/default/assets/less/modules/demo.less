@@ -1,0 +1,78 @@
+/* THIS IS ONLY USED FOR DEMO PURPOSES */
+
+.styler-wrapper{
+    position: fixed;
+    width: 240px;
+    height: 80%;
+    .right(0);
+    top:100px;
+    text-align: center;
+  -webkit-transition: all 200ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 200ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -webkit-transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -moz-transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -ms-transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -o-transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    &.closed{
+        .right(-240px);
+    }
+    .toggler{
+        position: absolute;
+        .left(-47px);
+        width: 48px;
+        height: 48px;
+        margin-top: 36px;
+        background: #fff;
+        .border-top-left-radius(4px);
+        .border-bottom-left-radius(4px);
+        border:1px solid @base-light-three;
+        .border-right(0);
+        z-index: 99;
+        box-shadow: -2px 0 3px 0 rgba(191, 191, 191, 0.36);
+        i{
+          color:#c1cace;
+          font-size: 17px;
+          vertical-align: middle;
+          line-height: 48px;
+        }
+    }
+    .items:hover{
+      outline:2px solid @color-primary;
+    } 
+    .items{
+      &.active{
+         outline:2px solid @color-primary;
+      }
+
+    }
+    .themes:hover{
+      outline:2px solid @color-primary;
+    } 
+    .themes{
+      &.active{
+         outline:2px solid @color-primary;
+      }
+
+    }
+    .nav-tabs > li > a{
+      min-height: 22px;
+      min-width: 41px;
+      padding: 3px;
+      i{
+        line-height: 32px;
+        font-size: 16px;
+        vertical-align: middle;
+      }
+    }
+    .tab-content{
+      border:1px solid @base-light-three;
+      border-top: 0;
+    }
+    .nav{
+      border:1px solid @base-light-three;
+    }
+    .styler-tabs{
+      box-shadow: 0 0 9px rgba(191, 191, 191, 0.36);      
+    }
+}

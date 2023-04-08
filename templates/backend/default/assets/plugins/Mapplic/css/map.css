@@ -1,0 +1,48 @@
+#logos {
+	pointer-events: none;
+}
+
+#shops polygon,
+#shops rect {
+	opacity: 0.6;
+	stroke: #fff;
+	stroke-width: 0.5;
+	transition: opacity 0.2s;
+}
+
+#shops polygon:hover,
+#shops rect:hover,
+#misc path:hover {
+	opacity: 1;
+}
+
+/*Food*/
+#food polygon,
+#food rect {
+	fill: #bfe79e;
+}
+
+/* Department */
+#department polygon,
+#department rect {
+	fill: #f8c255;
+}
+
+/* Health */
+#health polygon,
+#health rect {
+	fill: #b7a6bd;
+}
+
+/* Clothing */
+#clothing polygon,
+#clothing rect {
+	fill: #f56b7e;
+}
+
+/* Misc */
+#misc polygon,
+#misc rect,
+#misc path {
+	fill: #7dd5c9;
+}

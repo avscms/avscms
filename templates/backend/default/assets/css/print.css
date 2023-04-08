@@ -1,0 +1,24 @@
+@media print {
+ .header{
+	display:none;
+ }
+ .page-content{
+	margin:0px;
+ }
+ .page-content .content{
+	padding:20px;
+ }
+ .btn{
+	display:none;
+ }
+ .row-fluid [class*="span"]{
+	width:96%;
+  }
+ #main-menu{
+	display:none;
+ }
+ #sidr{
+	display:none;
+ }
+
+}

@@ -1,0 +1,201 @@
+/* Common style */
+.hover-grid {
+	max-width: 1000px;
+	width: 90%;
+}
+
+.hover-grid a {
+	float: left;
+	width: 100%;
+	color: #333;
+}
+
+.hover-grid a:nth-child(odd) {
+	height:100%
+}
+
+.hover-grid figure {
+	position: relative;
+	overflow: hidden;
+	margin: 5px;
+	background: #333;
+	width:100% !important;
+	height:100% !important
+}
+
+.hover-grid figure img {
+	position: relative;
+	display: block;
+	width: 100%;
+	opacity: 0.7;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.hover-grid figcaption {
+	position: absolute;
+	top: 0;
+	z-index: 11;
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.hover-grid figcaption h2 {
+	margin: 0 0 20px 0;
+	color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-size: 130%;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.hover-grid figcaption p {
+	padding: 0 20px;
+	color: #aaa;
+	font-weight: 300;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	font-size:20px;
+	font-family: 'Open Sans';
+}
+
+.hover-grid figcaption h2,
+.hover-grid figcaption p {
+	-webkit-transform: translateY(50px);
+	transform: translateY(50px);
+}
+
+.hover-grid figure button {
+	position: absolute;
+	padding: 4px 20px;
+	border: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.hover-grid figcaption,
+.hover-grid figcaption h2,
+.hover-grid figcaption p,
+.hover-grid figure button {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+/* Style for SVG */
+.hover-grid svg {
+	position: absolute;
+	top: -1px; /* fixes rendering issue in FF */
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+}
+
+.hover-grid svg path {
+	fill: #fff;
+}
+
+/* Hover effects */
+.hover-grid a:hover figure img {
+	opacity: 1;
+}
+
+.hover-grid a:hover figcaption h2,
+.hover-grid a:hover figcaption p {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.hover-grid a:hover figcaption p {
+	opacity: 0;
+}
+
+/* Individual styles */
+
+.hover-grid figure button,
+.hover-grid figure button {
+	top: 50%;
+	left: 50%;
+	border: 3px solid #fff;
+	background: transparent;
+	color: #fff;
+	opacity: 0;
+	-webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
+	transform: translateY(-50%) translateX(-50%) scale(0.25);
+}
+
+.hover-grid a:hover figure button,
+.hover-grid a:hover figure button {
+	opacity: 1;
+	-webkit-transform: translateY(-50%) translateX(-50%) scale(1);
+	transform: translateY(-50%) translateX(-50%) scale(1);
+}
+
+
+
+/* Media Queries */
+/* Let's redefine the width of each anchor and the margins */
+
+@media screen and (max-width: 58em) {
+	.hover-grid a {
+		width: 33.333%;
+	}
+
+	.hover-grid a:nth-child(odd) {
+		margin: 0;
+	}
+
+	.hover-grid a:nth-child(3n-1) {
+		margin: 30px 0 -30px 0;
+	}
+}
+
+@media screen and (max-width: 45em) {
+	.hover-grid {
+		max-width: 500px;
+	}
+
+	.hover-grid a {
+		width: 50%;
+	}
+
+	.hover-grid a:nth-child(3n-1) {
+		margin: 0;
+	}
+
+	.hover-grid a:nth-child(even) {
+		margin: 30px 0 -30px 0;
+	}
+
+
+	.hover-grid figcaption h2 {
+		margin-bottom: 0px;
+		-webkit-transform: translateY(30px);
+		transform: translateY(30px);
+	}
+
+	.hover-grid figcaption p {
+		margin: 0;
+		padding: 0 10px;
+	}
+}
+
+@media screen and (max-width: 27em) {
+	.hover-grid {
+		max-width: 250px;
+	}
+
+	.hover-grid a {
+		width: 100%;
+	}
+
+	.hover-grid a:nth-child(even) {
+		margin: 0;
+	}
+}

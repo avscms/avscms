@@ -1,0 +1,427 @@
+.alert {
+    color: @color-warning-dark;
+    background-color:  @color-warning-light;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    padding: 9px 19px 9px 15px;
+    border-radius: 3px 3px 3px 3px;
+    border: 1px solid #F0DBB4;
+    .transition(all 0.2s linear 0s);
+
+    .link {
+        color: @color-warning-dark;
+        font-weight: bold;
+    }
+    .alert-heading {
+        color: @color-warning-dark !important;
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+    .btn-small {
+        position: relative;
+        top: -3.5px;
+    }
+    .button-set {
+        .btn {
+            position: relative;
+            top: 8px;
+        }
+    }
+    .close {
+        background: url("@{base-img-url}/icon/noti-cross.png") no-repeat scroll 0 0 transparent;
+        background-position: -9px -10px;
+        width: 10px;
+        height: 9px;
+        position: relative;
+        opacity: 0.8;
+        top: 4.5px;
+        .float(right);
+        .margin-left(20px);
+        &:hover {
+            opacity: 1;
+        }
+    }
+    
+}
+.alert-success {
+    color: @color-primary-dark;
+    background-color: @color-primary-light;
+    border-color: #bfd1cf;
+
+    .link {
+        color: @color-primary-dark;
+    }
+    .alert-heading {
+         color: @color-primary-dark !important;
+    }
+    .close {
+        background-position: -38px -10px !important;
+    }
+
+}
+.alert-info {
+    color: @color-success-dark;
+    background-color: @color-success-light;
+    border-color: #bfd4de;
+    .link {
+        color: @color-success-dark;
+    }
+    .alert-heading {
+        color: @color-success-dark !important;
+    }
+    .close {
+        background-position: -67px -10px !important;
+    }
+}
+.alert-danger, .alert-error {
+    color: @color-danger-dark;
+    background-color:  @color-danger-light;
+    border-color: #f8cdcd;
+}
+.alert-danger .link, .alert-error .link {
+    color: @color-danger-dark;
+}
+.alert-danger .alert-heading , .alert-error .alert-heading {
+    color: @color-danger-dark !important;
+}
+.alert-error .close, .alert .alert-danger .close {
+    background-position: -95px -10px !important;
+}
+.alert-block {
+    padding: 15px 19px 15px 17px;
+}
+.popover-content{
+    .notification-messages {
+        padding: 15px 18px 15px;
+    }
+}
+.notification-messages {
+    font-family: @base-font-family;
+    background-color: #eef9f8;
+    padding: 15px 18px 10px;
+    display: block;
+    color: #8b91a0;
+    margin-bottom: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    &.success {
+        background-color: #eef9f8;
+        &:hover {
+            background-color: #d9edf1;
+            cursor: pointer;
+        }
+        .iconholder {
+            i {
+                color: #f35958;
+            }
+        }
+    }
+    &.danger {
+        background-color: #fef2f2;
+        &:hover {
+            background-color: #fae1e1;
+            cursor: pointer;
+        }
+        .iconholder {
+            i {
+                color: #f35958;
+            }
+        }
+    }
+    &.info {
+        background-color: #edf7fc;
+        &:hover {
+            background-color: #d8ebf4;
+            cursor: pointer;
+        }
+        .iconholder {
+            i {
+                color: #f35958;
+            }
+        }
+    }
+    .message-wrapper {
+        display: inline-block;
+        width: 70%;
+        height: 43px;
+        .float(left);
+        .heading {
+            display: block;
+            .float(left);
+            .text-align(left);
+            color: #1b1e24;
+            font-size: 13px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-all;
+            width: 100%;
+            margin: 0;
+            line-height: 19px;
+            font-weight: 600;
+        }
+        .description {
+            display: block;
+            .float(left);
+            .text-align(left);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-all;
+            font-size: 11px;
+            width: 100%;
+            line-height: 19px;
+        }
+    }
+    .date {
+        display: inline-block;
+        font-size: 11px;
+        line-height: 15px;
+        font-style: italic;
+        opacity: 0.4;
+    }
+    .user-profile {
+        border-radius: 100px 100px 100px 100px;
+        display: inline-block;
+        float: left;
+        height: 35px;
+        overflow: hidden;
+        width: 35px;
+        .margin-right(10px);
+        margin-top: 2px;
+    }
+    .iconholder {
+        display: inline-block;
+        float: left;
+        .margin-right(10px);
+        margin-top: 5px;
+        i {
+            font-size: 28px;
+        }
+    }
+}
+.tooltip-inner {
+    padding: 6px 9px;
+}
+.progress {
+    height: 12px;
+    background-color: @base-light-four;
+    background-image: none;
+    box-shadow: none;
+    filter:none;
+    &.no-radius {
+        border-radius: 0px;
+        .progress-bar {
+            border-radius: 0px;
+        }
+    }
+    &.transparent {
+        background-color: rgba(0, 0, 0, 0.28);
+    }
+    &.progress-small {
+        height: 4px;
+    }
+    &.progress-large {
+        height: 20px;
+    }
+}
+.progress-bar {
+    box-shadow: none;
+    border-radius: 3px;
+    background-color: #0090D9;
+    background-image: none;
+    .transition(all 1000ms cubic-bezier(0.785, 0.135, 0.150, 0.860));
+    -webkit-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    -moz-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    -ms-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    -o-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    .float(left);
+    filter: none;
+}
+.progress-bar-success {
+    background-color: @color-primary;
+    background-image: none;
+}
+.progress-bar-info {
+    background-color: @color-success;
+    background-image: none;
+}
+.progress-bar-warning {
+    background-color: @color-warning-luminous;
+    background-image: none;
+}
+.progress-bar-danger {
+    background-color: @color-danger;
+    background-image: none;
+}
+.progress-bar-white {
+    background-color:  @color-white ;
+    background-image: none;
+}
+.progress-bar-black {
+    background-color: @color-black;
+    background-image: none;
+}
+.progress-info .bar, .progress .bar-info {
+    background-color: @color-info;
+    background-image: none;
+}
+.progress-warning .bar, .progress .bar-warning {
+    background-color: @color-warning-luminous;
+    background-image: none;
+}
+.progress-danger .bar, .progress .bar-danger {
+    background-color: @color-danger;
+    background-image: none;
+}
+.progress-white .bar, .progress .bar-white {
+    background-color: @color-white;
+    background-image: none;
+}
+.progress-success.progress-striped .bar, .progress-striped .bar-success {
+    background-color: @color-success;
+}
+.progress-info.progress-striped .bar, .progress-striped .bar-info {
+    background-color: @color-info;
+}
+.details-status-single {
+    display: inline-block;
+    background-color: #e5e9ec;
+    color: #5c6370;
+    font-size: 11px;
+    padding: 6px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.label {
+    padding: 3px 9px;
+    font-size: 11px;
+    text-shadow: none;
+    background-color: @color-primary-grey;
+    font-family: @base-font-family-two;
+    font-weight: 600;
+    color: #5E5E5E;
+}
+.badge {
+    text-shadow: none;
+    font-family: @base-font-family-two;
+    font-weight: 600;
+    background-color: @color-primary-grey;
+    font-size: 11px;
+    .padding-left(6px);
+    .padding-right(6px);
+    padding-bottom: 4px;
+    color: #5E5E5E;
+}
+.label-primary, .badge-primary {
+    background-color: @color-success;
+    color:  @color-white ;
+}
+.label-success, .badge-success {
+    background-color: @color-primary;
+    color:  @color-white ;
+}
+.label-warning, .badge-warning {
+    background-color: @color-warning-luminous;
+    color:  @color-white ;
+}
+.label-important, .badge-important {
+    background-color: @color-important;
+    color:  @color-white  ;
+}
+.label-danger, .badge-danger {
+    background-color: @color-danger;
+    color:  @color-white  ;
+}
+.label-info, .badge-info {
+    background-color: @color-success;
+    color:  @color-white ;
+}
+.label-inverse, .badge-inverse {
+    background-color:@color-succss-inverse;
+    color:  @color-white ;
+}
+.label-white, .badge-white {
+    background-color:  @color-white ;
+    color: #5E5E5E;
+}
+.label-white, .badge-disable {
+    background-color: #2a2e36;
+    color: #8b91a0;
+}
+
+.popover {
+    border-radius: 3px;
+    border: none;
+    -webkit-box-shadow: 0px 0px 5px rgba(86, 96, 117, 0.15);
+    -moz-box-shadow: 0px 0px 5px rgba(86, 96, 117, 0.15);
+    box-shadow: 0px 0px 5px rgba(86, 96, 117, 0.15);
+    max-width: 350px;
+    &.right {
+        .arrow {
+            border-right-color: rgba(0, 0, 0, 0.08);
+        }
+    }
+    &.left {
+        .arrow {
+            border-right-color: rgba(0, 0, 0, 0.08);
+        }
+    }
+    &.top {
+        .arrow {
+            border-right-color: rgba(0, 0, 0, 0.08);
+        }
+    }
+    &.bottom {
+        .arrow {
+            &:after {
+                top: 0;
+                .margin-left(-11px);
+            }
+        }
+    }
+    .arrow {
+        &:after {
+            border-width: 11px;
+        }
+    }
+}
+.popover-title {
+    background-color:  @color-white ;
+    margin: 0 5px;
+    font-weight: bold;
+    color: #505458 !important;
+    text-align: center;
+}
+.modal {
+    border-radius: 3px;
+}
+.modal-header {
+    text-align: center;
+    p {
+        color: #8b91a0;
+    }
+}
+.modal-body {
+    background-color: #e5e9ec;
+}
+.modal-content{
+    border: 0;
+}
+.modal-footer {
+    border-top: none;
+    box-shadow: none;
+    background-color: #F3F5F6;
+    margin-top:0;
+    .text-align(right);
+}
+.dropdown-menu{
+    &.pull-right{
+        .right(0);
+        .left(auto);
+    }
+}

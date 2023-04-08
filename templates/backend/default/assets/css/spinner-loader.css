@@ -1,0 +1,53 @@
+@-moz-keyframes three-quarters-loader {
+  0% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes three-quarters-loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes three-quarters-loader {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* :not(:required) hides this rule from IE9 and below */
+.three-quarters-loader:not(:required) {
+  -moz-animation: three-quarters-loader 700ms infinite linear;
+  -webkit-animation: three-quarters-loader 700ms infinite linear;
+  animation: three-quarters-loader 700ms infinite linear;
+  border: 2px solid #fff;
+  border-right-color: transparent;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 14px;
+  height: 14px;
+  top: 2px;
+}

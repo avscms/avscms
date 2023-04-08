@@ -1,0 +1,91 @@
+.slider{
+	display:block;
+	margin:5px 0px;
+}
+
+.slider.primary .slider-track{
+	background: #0AA699;
+	background-image:none;
+}
+
+.slider.sucess .slider-track{
+	background: #0090D9;
+	background-image:none;
+}
+
+.slider.info .slider-track{
+	 background-color: #1F3853;
+	 	background-image:none;
+}
+
+.slider.warning .slider-track{
+	background: #FDD01C;
+		background-image:none;
+}
+
+.slider.danger .slider-track{
+	background: #F35958;
+	background-image:none;
+}
+
+.slider.white .slider-track{
+	background: #fff;
+		background-image:none;
+}
+
+.slider.slider-vertical{
+	margin: 0 10px;
+}
+.slider-handle.round {
+	background-color:#fff;
+	opacity:1;
+	background-image:none;
+	-webkit-box-shadow:inset 0px 0px 5px 0px rgba(107,170,165,0.71), 0px 1px 3px rgba(0, 0, 0, 0.49);
+-moz-box-shadow:inset 0px 0px 5px 0px rgba(107,170,165,0.71), 0px 1px 3px rgba(0, 0, 0, 0.49);
+box-shadow:inset 0px 0px 5px 0px rgba(107,170,165,0.71),0px 1px 3px rgba(0, 0, 0, 0.49);
+	width: 26px;
+	height: 26px;
+}
+.slider.slider-horizontal .slider-handle{
+	margin-top: -10px !important;
+}
+.slider.slider-horizontal .slider-track{
+	 height: 5px !important;
+			 -webkit-border-radius: 8px !important;
+	-moz-border-radius: 8px !important;
+	border-radius: 8px !important;
+-webkit-box-shadow: inset 0px 0px 1px 1px rgba(107,170,165,0.33) !important;
+-moz-box-shadow: inset 0px 0px 1px 1px rgba(107,170,165,0.33)!important;
+box-shadow: inset 0px 0px 1px 1px rgba(107,170,165,0.33)!important;
+}
+.slider.slider-vertical .slider-handle{
+	 margin-left: -10px !important;
+}
+.slider.slider-vertical .slider-track{
+	 width: 5px !important;
+
+}
+.the-icons [class*="span"]:first-child{
+	margin-left:2.5641%;
+}
+.slider-selection{
+		 -webkit-border-radius: 8px !important;
+	-moz-border-radius: 8px !important;
+	border-radius: 8px !important;
+	-webkit-box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.11)!important;
+-moz-box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.11)!important;
+box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.11)!important;
+}
+
+.blue .slider-selection{
+	background-image:none !important;
+	background-color:#0a6ea0!important;
+}
+.red .slider-selection{
+	background-image:none !important;
+	background-color:#000!important;
+}
+.green .slider-selection{
+	background-image:none !important;
+	background-color:#0e766d!important;
+}

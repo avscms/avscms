@@ -1,0 +1,163 @@
+.table {
+    & > thead {
+        & > tr {
+            & > th {
+                border-bottom: 0px;
+            }
+        }
+    }
+    th {
+        border-top: 1px solid #e8edf1;
+        padding: 10px 12px;
+        font-size: 12px;
+        text-transform: uppercase;
+        &.medium-cell {
+            width: 112px;
+        }
+        &.big-cell {
+            width: 200px;
+        }
+    }
+    tr {
+        &.row_selected {
+            td {
+                background-color:  #ffffcc !important;
+            }
+            .progress {
+                background-color:  $color-white ;
+            }
+        }
+    }
+    td {
+        border-top: 1px solid #e8edf1;
+        vertical-align: top;
+        padding: 10px 12px !important;
+        color: #576475;
+        font-size: 13px;
+        &.no-border {
+            border: none;
+        }
+        &:first-child {
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+        &:last-child {
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+        .progress {
+            margin-bottom: 0px;
+        }
+        .muted {
+            color: #95989a;
+        }
+        &.clickable {
+            cursor: pointer;
+        }
+    }
+    .checkbox {
+        margin-left:3px;
+    }
+    .star {
+        margin-left:3px;
+    }
+}
+th {
+    text-align:left;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 12px;
+}
+.table th input[type="radio"], input[type="checkbox"], .table td input[type="radio"], input[type="checkbox"] {
+    margin-top: -2px;
+}
+.table td.small-cell, .table th.small-cell {
+    width: 40px;
+}
+.table-fixed-layout {
+    table-layout: fixed;
+    td {
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+.table-condensed > thead > tr > th, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > td {
+    padding: 9px;
+}
+.table-condensed {
+    th {
+        .checkbox {
+            margin-left:4px;
+        }
+    }
+}
+.table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: 1px solid $table-border;
+}
+.table-striped tbody > tr:nth-child(2n+1) > td, .table-striped tbody > tr:nth-child(2n+1) > th {
+    background-color: $table-body-background;
+    border: none;
+}
+.table-striped {
+    tbody {
+        & > tr {
+            & > td {
+                border: 0px;
+            }
+        }
+    }
+}
+.table-hover tbody tr:hover>td, .table-hover tbody tr:hover>th {
+    background-color: $table-hover-background;
+}
+.table-hover {
+    tbody {
+        tr {
+            &.row_selected {
+                &:hover {
+                    & > td {
+                        background-color: #fef8ae !important;
+                    }
+                }
+            }
+            &:hover {
+                & > td {
+                    .progress {
+                        background-color:  $color-white ;
+                    }
+                }
+            }
+        }
+    }
+}
+.table-condensed th, .table-condensed td {
+    padding: 10px 5px;
+}
+.table-tools-actions {
+    margin: 0px 5px;
+}
+.inner-table {
+    td {
+        background-color: transparent !important;
+    }
+}
+.table-bordered {
+    border-color: $table-border !important;
+    th {
+        background-color: $table-body-background;
+        border: 0 !important;
+    }
+    td {
+        border: 1px solid $table-border !important;
+        &:first-child {
+            border-radius: 0px;
+        }
+        &:last-child {
+            border-radius: 0px;
+        }
+    }
+}

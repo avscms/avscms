@@ -1,0 +1,45 @@
+.file-box {
+
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-appearance: none !important;
+    color: #282323;
+    outline: 0;
+    height: 16px;
+    padding: 0 11px !important;
+    font-size: 13px;
+    font-weight: normal;
+    vertical-align: top;
+    background-color: #ffffff;
+    min-height: 37px;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #e5e9ec;
+    transition: background 0.2s linear 0s, box-shadow 0.2s linear 0s;
+	
+	-webkit-border-top-right-radius: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	-moz-border-radius-topright: 2px;
+	-moz-border-radius-bottomright: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	
+	border-left:none;
+	
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 36px;	
+
+}
+
+.btn-file {
+	-webkit-border-top-right-radius: 0!important;
+	-webkit-border-bottom-right-radius: 0!important;
+	-moz-border-radius-topright: 0!important;
+	-moz-border-radius-bottomright: 0!important;
+	border-top-right-radius: 0!important;
+	border-bottom-right-radius: 0!important;
+	padding: 8px 12px 9px;
+	float: left;
+}

@@ -1,0 +1,1 @@
+											<input type="hidden" name="multi_server" value="0">

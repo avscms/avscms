@@ -1,0 +1,483 @@
+.grid {
+    clear: both;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    padding: 0px;
+    &.closed{
+        .grid-body{
+            display: none;
+            overflow: hidden;
+        }
+    }
+    &.box {
+        padding: 0px !important;
+        .form-horizontal {
+            &.form-bordered {
+                .control-group {
+                    .margin-left(-10px);
+                    .margin-right(-10px);
+                    &:first-child {
+                        margin-top: -10px;
+                    }
+                }
+            }
+        }
+        .grid-title {
+            padding: 8px 10px 2px 10px;
+            border-bottom: 1px solid #eee;
+            color:  @color-white  !important;
+            margin-bottom: 0px;
+            & > .actions {
+                & > .btn {
+                    & > i {
+                        color:  @color-white  !important;
+                    }
+                }
+            }
+            .tools {
+                margin-top: 3px;
+                a {
+                    background: url(@{base-img-url}/icon/portlet-tray.png) no-repeat;
+                    width: 23px;
+                    height: 23px;
+                }
+            }
+        }
+        .grid-body {
+            background-color:  @color-white ;
+            padding: 10px;
+        }
+        &.blue {
+            border: 1px solid #b4cef8;
+            border-top: 0;
+            .grid-title {
+                background-color: #58acf3;
+            }
+        }
+        &.red {
+            border: 1px solid #f35958;
+            border-top: 0;
+            .grid-title {
+                background-color: #f35958;
+            }
+        }
+        &.yellow {
+            border: 1px solid #fccb7e;
+            border-top: 0;
+            .grid-title {
+                background-color: #ffb848;
+            }
+        }
+        &.green {
+            border: 1px solid @color-green;
+            border-top: 0;
+            .grid-title {
+                background-color: @color-green;
+            }
+        }
+        &.purple {
+            border: 1px solid #af5cc1;
+            border-top: 0;
+            .grid-title {
+                background-color: #852b99;
+            }
+        }
+        &.grey {
+            border: 1px solid #9d9c9c;
+            border-top: 0;
+            .grid-title {
+                background-color: #555555;
+            }
+        }
+        &.light-grey {
+            border: 1px solid #eee;
+            border-top: 0;
+            .grid-title {
+                background-color: #aaa;
+            }
+        }
+    }
+    .simple {
+        .form-actions {
+            .margin-left(-20px) !important;
+            .margin-right(-20px) !important;
+            margin-bottom: -20px !important;
+        }
+    }
+    .solid {
+        .grid-title {
+            color:  @color-white  !important;
+            border-bottom: 1px solid  @color-white ;
+        }
+    }
+    &.solid {
+        .grid-title {
+            margin-bottom: 5px;
+            border: 0px;
+            padding: 13px 15px 6px;
+            border-bottom: 1px solid rgba(255,255,255,0.35) !important;
+            .tools {
+                margin-top: 2px;
+                border: 0px;
+            }
+            h4 {
+                color:  @color-white ;
+            }
+        }
+        .grid-body {
+            color:  @color-white ;
+            padding: 20px;
+            h3 {
+                color:  @color-white ;
+            }
+        }
+    }
+    &.simple {
+        padding: 0px !important;
+        .grid-title {
+            padding: 14px 15px 7px 15px;
+            border-bottom: 1px solid #eee;
+            color: #282323 !important;
+            background-color:  @color-white ;
+            margin-bottom: 0px;
+            border: 1px solid #dddddd;
+            border-bottom: 0px;
+            & > .actions {
+                & > .btn {
+                    & > i {
+                        color:  @color-white  !important;
+                    }
+                }
+            }
+            .tools {
+                margin-top: 0px;
+                position: relative;
+            }
+            &.no-border {
+                border: 0px;
+                border-bottom: 0px;
+            }
+        }
+        .form-actions {
+            .margin-right(-26px) !important;
+            .margin-left(-26px) !important;
+            margin-bottom: -26px !important;
+        }
+        &.transparent {
+            .grid-body {
+                background-color: transparent !important;
+                border: none;
+            }
+            .grid-title {
+                border: none;
+                border-bottom: 1px solid #D7DBE0;
+                background-color: transparent;
+            }
+        }
+        .grid-body {
+            background-color:  @color-white ;
+            padding: 26px;
+            border: 1px solid #dddddd;
+            color: #6f7b8a;
+            &.no-padding {
+                padding: 0px;
+            }
+            .wrap-body {
+                padding: 0 26px;
+                padding-top: 10px;
+            }
+            &.no-border {
+                border: 0px;
+                padding-top: 1px;
+            }
+            h4 {
+                color: #282323;
+            }
+            h3 {
+                color: #282323;
+            }
+            &.invoice-body {
+                padding: 30px;
+                .invoice-logo {
+                    margin-bottom: 18px;
+                }
+            }
+        }
+        &.vertical {
+            &.green {
+                border-left: 4px solid @color-green;
+                border-top: none !important;
+            }
+            &.red {
+                border-left: 4px solid #f35958;
+                border-top: none !important;
+                border-left: 4px solid #f35958;
+                border-top: none !important;
+            }
+            &.purple {
+                border-left: 4px solid #736086;
+                border-top: none !important;
+                border-left: 4px solid #736086;
+                border-top: none !important;
+            }
+            &.blue {
+                border-left: 4px solid #0090d9;
+                border-top: none !important;
+                border-left: 4px solid #0090d9;
+                border-top: none !important;
+            }
+        }
+        &.horizontal {
+            &.red {
+                .grid-title {
+                    border-top: 4px solid #f35958;
+                }
+            }
+            &.yellow {
+                .grid-title {
+                    border-top: 4px solid #ffb848;
+                }
+            }
+            &.green {
+                .grid-title {
+                    border-top: 4px solid @color-green;
+                }
+            }
+            &.purple {
+                .grid-title {
+                    border-top: 4px solid #852b99;
+                }
+            }
+            &.grey {
+                .grid-title {
+                    border-top: 4px solid #555555;
+                }
+            }
+            &.light-grey {
+                .grid-title {
+                    border-top: 4px solid #aaa;
+                }
+            }
+        }
+    }
+}
+
+.grid:after, .grid:before {
+    display: table;
+}
+.grid-title {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    h4 {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 7px;
+        width: 60%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        i {
+            font-size: 14px;
+            .margin-right(5px);
+            color: #666;
+        }
+    }
+    &.descriptive {
+        .padding-left(23px) !important;
+        padding-top: 20px !important;
+        .actions {
+            .margin-right(14px);
+            margin-top: -16px;
+            a {
+                color: #4c5264;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+            i {
+                font-size: 22px;
+                .margin-right(10px);
+            }
+        }
+        p {
+            display: inline-block;
+            width: 60%;
+            white-space: nowrap;
+            line-height: 23px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #7a7d82;
+            font-size: 12px;
+        }
+    }
+    &.clickable {
+        cursor: pointer;
+    }
+    .tools {
+        & > a {
+            display: inline-block;
+            height: 16px;
+            .margin-left(5px);
+            &:hover {
+                text-decoration: none;
+                -webkit-transition: all 0.1s ease-in-out;
+                -moz-transition: all 0.1s ease-in-out;
+                -o-transition: all 0.1s ease-in-out;
+                -ms-transition: all 0.1s ease-in-out;
+                transition: all 0.1s ease-in-out;
+                opacity: .6;
+            }
+        }
+    }
+    .dropdown-menu {
+        i {
+            color: #000;
+        }
+    }
+    .actions {
+        & > .btn-group {
+            margin-top: -12px;
+            & > .btn {
+                padding: 4px 10px;
+                margin-top: -1px;
+            }
+        }
+        & > .btn {
+            padding: 4px 10px;
+            margin-top: -13px;
+            &.mini {
+                margin-top: -12px;
+                padding: 4px 10px;
+            }
+        }
+    }
+    .pagination {
+        &.pagination-small {
+            .float(right) !important;
+            display: inline-block !important;
+            margin: 0px;
+            margin-top: -2px;
+        }
+    }
+}
+.grid-title .tools,
+.grid-title .actions {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-top: 6px;
+    .float(right);
+}
+.grid-body {
+    padding: 0;
+    .btn-toolbar {
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    .slimScrollBar {
+        .margin-right(0px) !important;
+    }
+    &:before{
+        display: table;
+        content: " ";
+    }
+    &:after{
+        clear: both;
+        display: table;
+        content: " ";
+    }
+}
+.grid-body.light-blue, .grid.light-blue {
+    background-color: #bfd5fa  !important;
+}
+.grid-body.blue, .grid.blue {
+    background-color: #58acf3 !important;
+}
+.grid-body.red, .grid.red {
+    background-color: #f35958 !important;
+}
+.grid-body.yellow, .grid.yellow {
+    background-color: #ffb848 !important;
+}
+.grid-body.green, .grid.green {
+    background-color: @color-green !important;
+}
+.grid-body.purple, .grid.purple {
+    background-color: #852b99 !important;
+}
+.grid-body.light-grey, .grid.light-grey {
+    background-color: #fafafa !important;
+}
+.grid-body.dark-grey, .grid.dark-grey {
+    background-color: #555555 !important;
+}
+.sortable {
+    .grid {
+        .grid-title {
+            cursor: move;
+        }
+    }
+}
+.ui-sortable {
+    min-height: 10px !important;
+}
+.ui-sortable-placeholder {
+    border: 1px dotted black;
+    visibility: visible !important;
+    height: 100% !important;
+    * {
+        visibility: hidden;
+    }
+}
+.sortable-box-placeholder {
+    background-color: #f5f5f5;
+    border: 1px dashed #DDDDDD;
+    display: block;
+    margin-top: 0px !important;
+    margin-bottom: 24px !important;
+    * {
+        visibility: hidden;
+    }
+}
+.grid.simple .grid-title .tools a,.grid.solid .grid-title .tools a {
+    position: relative;
+    background: url('@{base-img-url}/icon/portlet-tray.png') no-repeat;
+    transition: all 0.1s linear 0s;
+}
+.grid.simple .grid-title .tools > a.remove, 
+.grid.solid .grid-title .tools > a.remove {
+    background-position: -66px -38px;
+    width: 10px;
+    height: 10px;
+    top: -5px;
+}
+.grid.simple .grid-title .tools > a.config,
+.grid.solid .grid-title .tools > a.config {
+    background-position: -3px -32px;
+    width: 22px;
+    height: 22px;
+}
+.grid.simple .grid-title .tools > a.reload,
+.grid.solid .grid-title .tools > a.reload {
+    background-position: -37px -38px;
+    width: 12px;
+    height: 10px;
+    top: -5px;
+}
+.grid.simple .grid-title .tools > a.expand,
+.grid.solid .grid-title .tools > a.expand {
+    background-position: -123px -40px;
+    width: 10px;
+    height: 6px;
+    top: -5px;
+}
+.grid.simple .grid-title .tools > a.collapse,
+.grid.solid .grid-title .tools > a.collapse {
+    background-position: -95px -40px;
+    width: 9px;
+    height: 7px;
+    top: -5px;
+}

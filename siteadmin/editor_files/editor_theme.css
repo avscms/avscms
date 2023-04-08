@@ -1,0 +1,242 @@
+/* generic text styles */
+.wpStyled {
+	font-size: 10px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color: #000000;
+}
+a.wpStyled {
+	font-size: 10px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color: #000000;
+}
+/* container (border, background color) */
+.wpContainer {
+	border: 1px solid threedshadow; 
+	background-color: threedface; 
+	table-layout:fixed;
+}
+table.wpContainer td {
+	padding: 5px;
+	margin: 0px;	
+}
+/* the toolbars */
+.wpToolbar {
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;  
+	font-size: 10px;
+}
+table.wpToolbar td {
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;  
+	font-size: 10px;
+}
+/* toolbar buttons */
+.wpDisabled {
+	border-width: 0px; 
+	padding: 0px; 
+	filter: mask() mask(color=#AAAAAA);
+	/*FILTER: progid:DXImageTransform.Microsoft.MaskFilter() progid:DXImageTransform.Microsoft.MaskFilter(color=#AAAAAA);*/
+	margin: 1px; 
+}
+.wpReady {
+	border: threedface 1px solid; 
+	padding: 0px; 
+	margin: 0px; 
+}
+.wpOver {
+	border-right: buttonshadow 1px solid; 
+	border-top: buttonhighlight 1px solid; 
+	border-left: buttonhighlight 1px solid;
+	border-bottom: buttonshadow 1px solid;
+	padding: 0px; 
+	margin: 0px;
+}
+.wpDown {
+	border-right: 1px solid threedhighlight; 
+	border-top: 1px solid threedshadow; 
+	border-left: 1px solid threedshadow; 
+	border-bottom: 1px solid threedhighlight; 
+	padding: 0px; 
+	margin: 0px; 
+}
+.wpSpacer {
+	background-color: threedshadow;
+}
+.wpLatched {
+	border: 1px inset; 
+	padding: 0px; 
+	margin: 0px; 
+	background-color: #f7f7f7
+}
+.wpLatchedOver {
+	border: 1px inset; 
+	padding: 0px; 
+	margin: 0px;  
+	background-color: threedface
+}
+/* drop down menus */
+.wpDropBorderWide {
+	width: 80px;
+	background-color: #ffffff; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px;
+	margin-right:2px;
+}
+table.wpDropBorderWide td {
+	padding: 0px;
+	margin: 1px;
+}
+.wpDropBorderNarrow {
+	width: 40px;
+	background-color: #ffffff; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px;
+	margin-right:2px;
+}
+table.wpDropBorderNarrow td {
+	padding: 0px;
+	margin: 1px;
+}
+.wpDropBorderNarrow div {
+	width: 30px;
+	background-color:white; 
+	height:14px; 
+	overflow:hidden; 
+	cursor:default;
+	font-family: verdana;
+	font-size: 11px;
+	color: #000000;
+	padding: 0px;
+	margin: 0px;
+	line-height: normal;
+}
+.wpDropBorderWide div {
+	width: 70px;
+	background-color:white; 
+	height:14px; 
+	overflow:hidden; 
+	cursor:default;
+	font-family: verdana;
+	font-size: 11px;
+	color: #000000;
+	padding: 0px;
+	margin: 0px;
+	line-height: normal;
+}
+.wpDropBorderNarrow img {
+	background-color: threedface;
+}
+.wpDropBorderWide img {
+	background-color: threedface;
+}
+.wpFrameDropBorder {
+	position: absolute; 
+	display:none; 
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#707070,direction=135,strength=3); 
+	z-index: 100000
+}
+.wpMozFrameDropBorder {
+	position: absolute; 
+	display:none; 
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#707070,direction=135,strength=3); 
+	z-index: 100000;
+	border: 1px solid #000000;
+}
+/* the editing areas */
+.wpEditFrame {
+	border-top: 2px solid threedshadow; 
+	border-left: 1px solid threeddarkshadow; 
+	border-right: 1px solid threeddarkshadow; 
+	border-bottom: 0px solid threedshadow; 
+	background-color:#FFFFFF;
+	width:100%;
+}
+/* html textarea */
+.wpHtmlEditArea {
+	border-top: 1px solid threeddarkshadow; 
+	border-left: 1px solid threeddarkshadow; 
+	border-right: 1px solid threeddarkshadow; 
+	border-bottom: 0px solid threeddarkshadow; 
+	background-color: #ffffff; 
+	width: 100%;
+}
+/* tabs */
+table.wpTabHolder td {
+	padding: 2px;
+	margin: 0px;
+}
+.wpTabNoTab {
+	border-top: 1px solid threeddarkshadow
+}
+.wpTButtonUp {
+	font-size: 9px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color: #000000;
+	border-bottom: 1px solid threeddarkshadow;
+	border-left: 1px solid threeddarkshadow;
+	border-right: 1px solid threeddarkshadow;
+	background-color:#ffffff;
+	cursor: default;
+	white-space: nowrap;
+}
+.wpTButtonMouseDown {
+	font-size: 9px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color: #ffffff;
+	border: 1px solid threeddarkshadow;
+	background-color: threedshadow;
+	cursor: default;
+	white-space: nowrap;
+}
+.wpTButtonDown {
+	font-size: 9px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color: #000000;
+	border: 1px solid threeddarkshadow;
+	background-color: threedface;
+	cursor: default;
+	white-space: nowrap;
+}
+/* message area */
+.wpBorderMessage {
+	cursor: pointer; 
+	cursor: hand;
+}
+/* context menus */
+.wpContextBorder {
+	border: 1px solid threeddarkshadow; 
+	width:100%;
+}
+.wpContextTable {
+	border-right: 1px solid threedshadow; 
+	border-bottom: 1px solid threedshadow; 
+	background-color:#F9F8F7; 
+	width:100%; 
+}
+table.wpContextTable td {
+	margin: 0px;
+	padding: 0px;
+}
+.wpContextCellOne {
+	background-color:threedface;
+	width: 23px;
+}
+.wpContextCellOneOver {
+	background-color:highlight;
+	width: 23px;
+}
+.wpContextCellTwo {
+	font-size: 11px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color: #000000; 
+	cursor:default;
+}
+.wpContextCellTwoOver {
+	font-size: 11px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color: highlighttext; 
+	cursor:default;
+	background-color: highlight;
+}

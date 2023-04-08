@@ -1,0 +1,43 @@
+# Comment the 2 lines below if the server returns 500 errors!
+Options -Indexes
+Options +FollowSymLinks
+
+#Uncomment following lines if you want to use image caching!
+#<IfModule mod_expires.c>
+#  ExpiresActive On
+#  ExpiresDefault A1209600
+#  ExpiresByType text/html A1
+#</IfModule>
+
+# Uncomment following lines if Apache doesnt support MultiViews!
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+	
+	# Uncomment the 2 lines below if you are using www.domain.com
+	# as the baseurl for the site and users access your site 
+	# via domain.com (THIS IS REQUIRED FOR JQUERY TO WORK)
+	
+	RewriteCond %{HTTP_HOST} ^domain.com [NC]
+	RewriteRule ^(.*)$ http://www.domain.com/$1 [L,R=301] 
+	
+	#http redirect to https, uncomment above if below line used, if you get
+	#too many redirect error, please comment out the https redirect and find
+	#other solusion.
+		
+	#RewriteCond %{HTTPS} off [OR]
+	#RewriteCond %{HTTP_HOST} !^www\.
+	#RewriteRule ^ https://www.domain.com%{REQUEST_URI} [NC,L]	
+
+	#do not remove following, used by avs for rewrite url
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule .* loader.php [L,QSA]
+</IfModule>
+
+# Edit below lines and set to
+# ErrorDocument CODE /RELATIVE/error.php
+# If the script is installed in the default document
+# root then relative is null.
+#ErrorDocument 401 /error.php
+#ErrorDocument 403 /error.php
+#ErrorDocument 404 /error.php

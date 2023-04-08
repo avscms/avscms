@@ -1,0 +1,46 @@
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+	outline: 0!important;
+	}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+a:active,
+a:hover,
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+	outline: 0!important;
+	}
+
+table {
+	background-color: transparent;
+}
+
+.enter {
+	padding: 15px;
+}
+
+.enter .btn {
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+.m-l-5 {
+	margin-left: 5px;
+}

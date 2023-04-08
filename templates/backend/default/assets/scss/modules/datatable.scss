@@ -1,0 +1,71 @@
+.dataTables_wrapper {
+    .pagination {
+        ul {
+            box-shadow: none;
+            font-size: 12px;
+            padding: 0;
+            & > li {
+                display: inline-block;
+                padding-left: 0px;
+                & > a {
+                    padding: 5px 10px;
+                }
+                &.next {
+                    & > a {
+                        &:hover {
+                            background-color:  $color-white ;
+                            color: #000;
+                        }
+                    }
+                    &.disabled {
+                        & > a {
+                            &:hover {
+                                color: #C2C6CB;
+                                opacity: 0.65;
+                                background-color:  $color-white ;
+                            }
+                        }
+                    }
+                }
+                &.prev {
+                    & > a {
+                        &:hover {
+                            background-color:  $color-white ;
+                            color: #000;
+                        }
+                    }
+                    &.disabled {
+                        & > a {
+                            &:hover {
+                                color: #C2C6CB;
+                                opacity: 0.65;
+                                background-color:  $color-white ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.dataTables_wrapper  .pagination ul > li:last-child > a, .dataTables_wrapper  .pagination ul > li:last-child > span {
+    margin-left:-8px;
+}
+.dataTables_wrapper .pagination ul > li > a, .pagination ul > li > span {
+    border: none;
+    box-shadow: none;
+    border-radius: 3px;
+    color: #6F7B8A;
+}
+.dataTables_wrapper .pagination ul > .disabled > span, .pagination ul > .disabled > a, .pagination ul > .disabled > a:hover, .pagination ul > .disabled > a:focus {
+    color: #C2C6CB !important;
+    opacity: 0.65 !important;
+    background-color:  $color-white  !important;
+}
+.dataTables_wrapper  .pagination ul > .active > a, .pagination ul > .active > span {
+    background-color: #F3F6F9;
+    font-weight: 600;
+}
+.dataTables_wrapper .pagination ul > li > a:hover, .pagination ul > li > a:focus, .pagination ul > .active > a, .pagination ul > .active > span {
+    background-color: #e8edf3;
+}

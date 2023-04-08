@@ -1,0 +1,31 @@
+<?php
+defined('_VALID') or die('Restricted Access!');
+$languages = array(
+	'en_US' => array('name' => 'English', 'flag' => 'EN'),
+	'fr_FR' => array('name' => 'Français', 'flag' => 'FR'),
+	'de_DE' => array('name' => 'Deutsch', 'flag' => 'DE'),
+	'nl_NL' => array('name' => 'Dutch', 'flag' => 'NL'),
+	'es_ES' => array('name' => 'Español', 'flag' => 'ES'),
+	'it_IT' => array('name' => 'Italiano', 'flag' => 'IT'),
+	'pt_PT' => array('name' => 'Português', 'flag' => 'PT'),
+	'pt_BR' => array('name' => 'Português', 'flag' => 'BR'),
+	'ru_RU' => array('name' => 'русский', 'flag' => 'RU'),
+	'sa_SA' => array('name' => 'العربية', 'flag' => 'SA'),
+	'he_IL' => array('name' => 'עִבְרִית', 'flag' => 'IL'),
+	'jp_JP' => array('name' => '日本語', 'flag' => 'JP'),
+	'cn_CS' => array('name' => '中文简体', 'flag' => 'CN'),
+    'cn_CT' => array('name' => '中文 繁體', 'flag' => 'CN'),
+	'tr_TR' => array('name' => 'Türkçe', 'flag' => 'TR'),
+	'dk_DK' => array('name' => 'Dansk', 'flag' => 'DK'),
+	'no_NO' => array('name' => 'Norsk', 'flag' => 'NO'),
+	'cz_CZ' => array('name' => 'Český', 'flag' => 'CZ'),
+	'bn_BD' => array('name' => 'বাংলা', 'flag' => 'BD'),
+	'ro_RO' => array('name' => 'Română', 'flag' => 'RO'),
+	'pl_PL' => array('name' => 'Polski', 'flag' => 'PL'),
+	'hu_HU' => array('name' => 'Magyar', 'flag' => 'HU'),
+	'ba_BA' => array('name' => 'Bosanski', 'flag' => 'BA'),
+	'hr_HR' => array('name' => 'Hrvatski', 'flag' => 'HR'),
+	'rs_RS' => array('name' => 'Srpski', 'flag' => 'RS'),
+	'si_SI' => array('name' => 'Slovenski', 'flag' => 'SI'),
+	);
+?>

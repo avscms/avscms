@@ -1,0 +1,292 @@
+.ios-switch {
+  height: 45px;
+  width: 75px;
+  position: relative;
+  background-color: #E5E5E5;
+  border-radius: 100px;
+  backface-visibility: hidden;
+}
+
+.ios-switch .background-fill {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.ios-switch .on-background {
+  background-image: -o-linear-gradient(#00e459, #00e158);
+  background-image: -ms-linear-gradient(#00e459, #00e158);
+  background-image: -moz-linear-gradient(#00e459, #00e158);
+  background-image: -webkit-linear-gradient(#00e459, #00e158);
+  background-image: linear-gradient(#00e459, #00e158);
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  filter: alpha(opacity=0);
+  z-index: 1;
+  -o-transition: .3s 0.2s;
+  -ms-transition: .3s 0.2s;
+  -moz-transition: .3s 0.2s;
+  -webkit-transition: .3s 0.2s;
+  transition: .3s 0.2s;
+}
+
+.ios-switch .state-background {
+  border-radius: 100px;
+  z-index: 2;
+  background-image: -o-linear-gradient(#ffffff, #FDFDFD);
+  background-image: -ms-linear-gradient(#ffffff, #FDFDFD);
+  background-image: -moz-linear-gradient(#ffffff, #FDFDFD);
+  background-image: -webkit-linear-gradient(#ffffff, #FDFDFD);
+  background-image: linear-gradient(#ffffff, #FDFDFD);
+  border: 2px solid #E5E5E5;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -o-transition: .4s;
+  -ms-transition: .4s;
+  -moz-transition: .4s;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.ios-switch .handle {
+  width: 41px;
+  height: 41px;
+  background-color: white;
+  top: 2px;
+  left: 2px;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 0 0 3px 1px hsla(0, 0%, 0%, .075), 0 3px 5px hsla(0, 0%, 0%, .15), 1px 2px 2px hsla(0, 0%, 0%, .05);
+  z-index: 3;
+  -o-transition: -o-transform .3s 0.25s cubic-bezier(0.455, 0.030, 0.215, 1.330);
+  -ms-transition: -ms-transform .3s 0.25s cubic-bezier(0.455, 0.030, 0.215, 1.330);
+  -moz-transition: -moz-transform .3s 0.25s cubic-bezier(0.455, 0.030, 0.215, 1.330);
+  -webkit-transition: -webkit-transform .3s 0.25s cubic-bezier(0.455, 0.030, 0.215, 1.330);
+  -o-transition: transform .3s 0.25s cubic-bezier(0.455, 0.030, 0.215, 1.330);
+  -ms-transition: transform .3s 0.25s cubic-bezier(0.455, 0.030, 0.215, 1.330);
+  -moz-transition: transform .3s 0.25s cubic-bezier(0.455, 0.030, 0.215, 1.330);
+  -webkit-transition: transform .3s 0.25s cubic-bezier(0.455, 0.030, 0.215, 1.330);
+  transition: transform .3s 0.25s cubic-bezier(0.455, 0.030, 0.215, 1.330);
+}
+
+.ios-switch.off .handle {
+  -o-animation: expand-off .3s 0.2s;
+  -ms-animation: expand-off .3s 0.2s;
+  -moz-animation: expand-off .3s 0.2s;
+  -webkit-animation: expand-off .3s 0.2s;
+  animation: expand-off .3s 0.2s;
+  -o-transform: translate3d(0px, 0, 0);
+  -ms-transform: translate3d(0px, 0, 0);
+  -moz-transform: translate3d(0px, 0, 0);
+  -webkit-transform: translate3d(0px, 0, 0);
+  transform: translate3d(0px, 0, 0);
+}
+
+.ios-switch.off .on-background {
+  -o-transition: .3s 0s;
+  -ms-transition: .3s 0s;
+  -moz-transition: .3s 0s;
+  -webkit-transition: .3s 0s;
+  transition: .3s 0s;
+}
+
+.ios-switch.off .state-background {
+  -o-transition: .4s 0.25s;
+  -ms-transition: .4s 0.25s;
+  -moz-transition: .4s 0.25s;
+  -webkit-transition: .4s 0.25s;
+  transition: .4s 0.25s;
+}
+
+.ios-switch.on .handle {
+  -o-animation: expand-on .3s 0.2s;
+  -ms-animation: expand-on .3s 0.2s;
+  -moz-animation: expand-on .3s 0.2s;
+  -webkit-animation: expand-on .3s 0.2s;
+  animation: expand-on .3s 0.2s;
+  -o-transform: translate3d(30px, 0, 0);
+  -ms-transform: translate3d(30px, 0, 0);
+  -moz-transform: translate3d(30px, 0, 0);
+  -webkit-transform: translate3d(30px, 0, 0);
+  transform: translate3d(30px, 0, 0);
+}
+
+.ios-switch.on .on-background {
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: alpha(opacity=100);
+}
+
+.ios-switch.on .state-background {
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+@keyframes expand-on {
+  0% {
+    width: 41px;
+  }
+
+  40% {
+    width: 50px;
+  }
+
+  100% {
+    width: 41px;
+  }
+}
+
+@keyframes expand-off {
+  0% {
+    width: 41px;
+    left: 2px;
+  }
+
+  40% {
+    width: 50px;
+    left: -7px;
+  }
+
+  100% {
+    width: 41px;
+    left: 2px;
+  }
+}
+
+@-o-keyframes expand-on {
+  0% {
+    width: 41px;
+  }
+
+  40% {
+    width: 50px;
+  }
+
+  100% {
+    width: 41px;
+  }
+}
+
+@-ms-keyframes expand-on {
+  0% {
+    width: 41px;
+  }
+
+  40% {
+    width: 50px;
+  }
+
+  100% {
+    width: 41px;
+  }
+}
+
+@-moz-keyframes expand-on {
+  0% {
+    width: 41px;
+  }
+
+  40% {
+    width: 50px;
+  }
+
+  100% {
+    width: 41px;
+  }
+}
+
+@-webkit-keyframes expand-on {
+  0% {
+    width: 41px;
+  }
+
+  40% {
+    width: 50px;
+  }
+
+  100% {
+    width: 41px;
+  }
+}
+
+@-o-keyframes expand-off {
+  0% {
+    width: 41px;
+    left: 2px;
+  }
+
+  40% {
+    width: 50px;
+    left: -7px;
+  }
+
+  100% {
+    width: 41px;
+    left: 2px;
+  }
+}
+
+@-ms-keyframes expand-off {
+  0% {
+    width: 41px;
+    left: 2px;
+  }
+
+  40% {
+    width: 50px;
+    left: -7px;
+  }
+
+  100% {
+    width: 41px;
+    left: 2px;
+  }
+}
+
+@-moz-keyframes expand-off {
+  0% {
+    width: 41px;
+    left: 2px;
+  }
+
+  40% {
+    width: 50px;
+    left: -7px;
+  }
+
+  100% {
+    width: 41px;
+    left: 2px;
+  }
+}
+
+@-webkit-keyframes expand-off {
+  0% {
+    width: 41px;
+    left: 2px;
+  }
+
+  40% {
+    width: 50px;
+    left: -7px;
+  }
+
+  100% {
+    width: 41px;
+    left: 2px;
+  }
+}

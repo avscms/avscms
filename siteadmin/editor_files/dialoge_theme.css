@@ -1,0 +1,230 @@
+/* styles for pop up dialoge windows */
+body {
+	padding: 2px 2px;
+	margin: 2px 2px;
+	border: 0px 0px; 
+	background-color: threedface;
+	font-family: Verdana, Arial, Helvetica, sans-serif;  
+	font-size: 11px;
+}
+td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;  
+	font-size: 11px;
+}
+button {
+	width: 8em; 
+	font-family: Verdana, Arial, Helvetica, sans-serif;  
+	font-size: 11px;
+}
+.button {
+	width: 8em; 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+select {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+input {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size:11px;
+}
+.colordisplay {	
+	width: 70px;
+}
+.colordisplay div {	
+	display: block;
+	border: #000000 1px solid; 
+	cursor: default;
+	width: 56px;
+	height: 12px;
+}
+
+.selcolordisplay {
+	display: block;	
+	border: #000000 1px solid; 
+	cursor: default;
+	width: 59px;
+	height: 12px;
+}
+.colortable  {
+	width: 264px;
+	font-size: 10px;
+	cursor: pointer; cursor: hand;
+}
+.colorCell {
+	border: 1px solid #000000
+}
+.dialog_content {
+	background-color: threedface;
+	width: 100%;
+}
+.helpMessage {
+	background-color:infobackground;
+	border: 1px solid threedshadow;
+}
+.fileBar {
+	border-bottom: 1px solid threeddarkshadow;
+	border-right: 1px solid threeddarkshadow;
+	border-left: 1px solid threedhighlight;
+	border-top: 1px solid threedhighlight;
+	background-color: threedface;
+}
+.previewWindow {
+	border-left:1px solid threeddarkshadow; 
+	border-top:1px solid threeddarkshadow; 
+	border-right: 2px solid threeddarkshadow; 
+	border-bottom: 2px solid threeddarkshadow;
+}
+.disabledtextbox {
+	background-color: #EEEEEE;
+	color: #666666;
+}
+.groove {
+	padding:5px 5px; border:2px groove
+}
+fieldset {
+	padding:3px;
+	margin-top:3px;
+}
+.fieldsetLine {
+	margin-top: 4px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+}
+a {
+	text-decoration: none; 
+	color:#003399; 
+	cursor: pointer; cursor: hand 
+}
+a:active { 
+	background-color: highlight; 
+	color:highlighttext; 
+}
+a:hover {
+	text-decoration: underline;
+}
+a.filelink {
+	display:block;
+}
+.delete {
+	display: block;
+	width: 22px;
+	height: 22px;
+}
+a.delete:hover {
+	width: 22px;
+	height: 22px;
+	background-color:#FF0000;
+}
+.noTab {
+	border-bottom: 2px solid threedhighlight;
+	color: threedface;
+}
+.tbuttonUp {
+	padding-left: 2px;
+	padding-right: 3px;
+	border-top: 2px solid threedhighlight;
+	border-left: 1px solid threedhighlight;
+	border-right: 1px solid threeddarkshadow;
+	background-color: threedface;
+	cursor: default;
+}
+.tbuttonUpLeft {
+	border-top: 2px solid threedhighlight;
+	border-left: 2px solid threedhighlight;
+	border-right: 1px solid threeddarkshadow;
+	background-color: threedface;
+	cursor: default;
+}
+.tbuttonUpRight {
+	padding-left: 2px;
+	padding-right: 3px;
+	border-top: 2px solid threedhighlight;
+	border-left: 1px solid threedhighlight;
+	border-right: 2px solid threeddarkshadow;
+	background-color: threedface;
+	cursor: default;
+}
+.tbuttonDown {
+	padding-left: 2px;
+	padding-right: 3px;
+	border-top: 1px solid threedhighlight;
+	border-left: 1px solid threedhighlight;
+	border-right: 1px solid threeddarkshadow;
+	border-bottom: 2px solid threedhighlight;
+	background-color: threedface;
+	cursor: default;
+}
+.tbuttonLeft {
+	padding-left: 2px;
+	padding-right: 3px;
+	border-top: 1px solid threedhighlight;
+	border-left: 1px solid threedhighlight;
+	border-right: 1px solid threedhighlight;
+	border-bottom: 2px solid threedhighlight;
+	background-color: threedface;
+	cursor: default;
+}
+.tbuttonRight {
+	padding-left: 2px;
+	padding-right: 3px;
+	border-top: 1px solid threedhighlight;
+	border-left: 1px solid threeddarkshadow;
+	border-right: 1px solid threeddarkshadow;
+	border-bottom: 2px solid threedhighlight;
+	background-color: threedface;
+	cursor: default;
+}
+.chooseImage {
+	margin-top: 0px;
+	padding-top: 0px;
+	height: 20px; 
+	width:23px; 
+}
+#dialogLoadMessage {
+	position:absolute; 
+	z-index:1000; 
+	display:block;
+	width:100%; 
+	height:100%;
+}
+#loadMessage {
+	background-color:#666666; 
+	border:1px solid #333333; 
+	padding: 10px; 
+	width: 100px; 
+	color:#FFFFFF; 
+	font-family:verdana,arial,helvetica,sans-serif; 
+	font-size:12px; 
+	font-weight:bold
+}
+#uploadMessage {
+	position:absolute;
+	z-index:1001; 
+	display:none;
+	width:100%; 
+	height:100%;
+	left: 0px; 
+	top: 0px
+}
+#uploadMessageText {
+	background-color:threedface; 
+	border:1px solid threedshadow; 
+	padding: 10px; 
+	width: 300px;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#707070,direction=135,strength=3);
+}
+.inset {
+	border-top: 1px solid threeddarkshadow;
+	border-left: 1px solid threeddarkshadow;
+	border-right: 1px solid threedhighlight;
+	border-bottom: 1px solid threedhighlight;
+}
+.outset {
+	border-bottom: 1px solid threeddarkshadow;
+	border-right: 1px solid threeddarkshadow;
+	border-left: 1px solid threedhighlight;
+	border-top: 1px solid threedhighlight;
+}

@@ -1,0 +1,148 @@
+{
+	"mapwidth":"959",
+	"mapheight":"593",
+	"categories":[
+
+	],
+	"levels":[
+		{
+			"id":"states",
+			"title":"States",
+			"map":"assets/img/map_svg.svg",
+			"minimap":"assets/img/us-small.jpg",
+			"locations":[
+				{
+					"id":"ca",
+					"title":"California",
+					"description":"</p><iframe width=\"240\" height=\"135\" src=\"http://www.youtube.com/embed/ebXbLfLACGM?list=FLlobg636ZD_FWo-rtCf17Fw\" frameborder=\"0\" allowfullscreen></iframe>",
+					"action": "tooltip",
+					"link": "http://en.wikipedia.org/wiki/California",
+					"pin":"hidden",
+					"x":"0.0718",
+					"y":"0.4551"
+				},
+				{
+					"id":"wa",
+					"title":"Washington",
+					"description":"<p>The Evergreen State</p>",
+					"action": "tooltip",
+					"link": "http://en.wikipedia.org/wiki/Washington_(state)",
+					"pin":"hidden",
+					"x":"0.1331",
+					"y":"0.0971"
+				},
+				{
+					"id":"nv",
+					"title":"Nevada",
+					"description":"Nevada is officially known as the \"Silver State\" due to the importance of silver to its history and economy",
+					"action": "tooltip",
+					"link": "http://en.wikipedia.org/wiki/Nevada",
+					"pin":"hidden",
+					"x":"0.1484",
+					"y":"0.3981"
+				},
+				{
+					"id":"il",
+					"title":"Illinois",
+					"description":"<p>Three U.S. presidents have been elected while living in Illinois</p><img src=\"images/logo.png\" alt=\"Mapplic\">",
+					"about": "Illinois state",
+					"action": "tooltip",
+					"link": "http://en.wikipedia.org/wiki/Illinois",
+					"pin":"hidden",
+					"x":"0.6207",
+					"y":"0.4324"
+				},
+				{
+					"id":"ny",
+					"title":"New York",
+					"description":"New York is a state in the Northeastern and Mid-Atlantic regions of the United States.",
+					"action": "tooltip",
+					"link": "http://en.wikipedia.org/wiki/NewYork",
+					"pin":"hidden",
+					"x":"0.8469",
+					"y":"0.2684"
+				},
+				{
+					"id":"ma",
+					"title":"Massachusetts",
+					"description":"Officially the Commonwealth of Massachusetts, is a state in the New England region of the northeastern United States.",
+					"action": "tooltip",
+					"link": "http://en.wikipedia.org/wiki/Massachusetts",
+					"pin":"hidden",
+					"x":"0.9046",
+					"y":"0.2627"
+				},
+				{
+					"id":"ga",
+					"title":"Georgia",
+					"description":"Georgia is known as the Peach State and the Empire State of the South.",
+					"action": "tooltip",
+					"link": "http://en.wikipedia.org/wiki/Georgia_(U.S._state)",
+					"pin":"hidden",
+					"x":"0.7515",
+					"y":"0.6893"
+				},
+				{
+					"id":"fl",
+					"title":"Florida",
+					"description":"The state capital is Tallahassee, the largest city is Jacksonville, and the largest metropolitan area is the Miami metropolitan area.",
+					"action": "tooltip",
+					"link": "http://en.wikipedia.org/wiki/Florida",
+					"pin":"hidden",
+					"x":"0.7998",
+					"y":"0.8496"
+				},
+				{
+					"id":"tx",
+					"title":"Texas",
+					"description":"<p>The Lone Star State <a href=\"http://www.codecanyon.net\">Canyon</a></p><img src=\"images/logo.png\" alt=\"Mapplic\">",
+					"action": "tooltip",
+					"link": "http://en.wikipedia.org/wiki/Texas",
+					"pin":"hidden",
+					"x":"0.4511",
+					"y":"0.7710",
+					"zoom": "2"
+				},
+				{
+					"id":"la",
+					"title":"Los Angeles",
+					"description":"<p>The city of Angels</p>",
+					"action": "tooltip",
+					"x":"0.0892",
+					"y":"0.5748",
+					"zoom": "2"
+				},
+				{
+					"id":"houston",
+					"title":"Houston",
+					"description":"<p>Space City</p>",
+					"action": "tooltip",
+					"x":"0.4950",
+					"y":"0.8427",
+					"zoom": "2"
+				},
+				{
+					"id":"chicago",
+					"title":"Chicago",
+					"description":"<p>The windy city</p>",
+					"action": "tooltip",
+					"x":"0.6410",
+					"y":"0.3497",
+					"zoom": "2"
+				},
+				{
+					"id":"newyork",
+					"title":"New York",
+					"description":"<p>The big apple</p>",
+					"action": "tooltip",
+					"x":"0.8821",
+					"y":"0.3326",
+					"zoom": "2"
+				}
+			]
+		}
+	],
+	"minimap":"false",
+	"sidebar":"false",
+	"zoomlimit":"4"
+}

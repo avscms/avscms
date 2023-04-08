@@ -1,0 +1,1 @@
+!function(e){e.fn.fitText=function(t,n){var i=t||1,o=e.extend({minFontSize:Number.NEGATIVE_INFINITY,maxFontSize:Number.POSITIVE_INFINITY},n);return this.each(function(){var t=e(this),n=function(){t.css("font-size",Math.max(Math.min(t.width()/(10*i),parseFloat(o.maxFontSize)),parseFloat(o.minFontSize)))};n(),e(window).on("resize.fittext orientationchange.fittext",n)})}}(jQuery);

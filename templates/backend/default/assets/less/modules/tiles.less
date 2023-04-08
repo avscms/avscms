@@ -1,0 +1,704 @@
+.tiles-container {
+    .margin-left(0px);
+    .margin-right(0px);
+}
+.tiles {
+    background-color: #bcbcbc;
+    color:  @color-white ;
+    position: relative;
+    &.overflow-hidden {
+        overflow: hidden;
+    }
+    &.full-height {
+        height: 100%;
+    }
+    &.added-margin {
+        .margin-right(-10px);
+    }
+    &.no-margin {
+        .margin-right(0);
+    }
+    &.margin-reset {
+        .margin-left(37px);
+    }
+    .tiles-title {
+        font-size: 10.5px;
+        font-family: @base-font-family-two;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+    }
+    .tiles-body {
+        padding: 19px 18px 15px 24px;
+    }
+    .controller {
+        position: relative;
+        display: inline-block;
+        .float(right);
+        a {
+            position: relative;
+            background: url('../img/icon/portlet-tray.png') no-repeat;
+            transition: all 0.1s linear 0s;
+            display: inline-block;
+            &.remove {
+                background-position: -66px -38px;
+                height: 10px;
+                top: -5px;
+                width: 10px;
+            }
+            &.config {
+                background-position: -3px -32px;
+                height: 22px;
+                width: 22px;
+            }
+            &.reload {
+                background-position: -37px -38px;
+                height: 10px;
+                top: -5px;
+                width: 12px;
+            }
+            &.expand {
+                background-position: -123px -11px;
+                width: 10px;
+                height: 6px;
+                top: -5px;
+            }
+            &:hover {
+                &.collapse {
+                    background-position: -95px -40px;
+                    height: 7px;
+                    top: -5px;
+                    width: 9px;
+                    background-position: -95px -40px;
+                    height: 7px;
+                    top: -5px;
+                    width: 9px;
+                }
+                &.remove {
+                    background-position: -66px -9px;
+                    height: 10px;
+                    top: -5px;
+                    width: 10px;
+                }
+                &.config {
+                    background-position: -3px -32px;
+                    height: 22px;
+                    width: 22px;
+                }
+                &.reload {
+                    background-position: -38px -9px;
+                    height: 10px;
+                    top: -5px;
+                    width: 12px;
+                }
+                &.expand {
+                    background-position: -123px -11px;
+                    width: 10px;
+                    height: 6px;
+                    top: -5px;
+                }
+            }
+        }
+    }
+    &.white {
+        background-color: @color-white;
+        color: #8b91a0;
+        .controller {
+            a {
+                &.remove {
+                    &:hover {
+                        background-position: -66px -38px;
+                        height: 10px;
+                        top: -5px;
+                        width: 10px;
+                        opacity: 0.6;
+                    }
+                }
+                &.config {
+                    &:hover {
+                        background-position: -3px -32px;
+                        height: 22px;
+                        width: 22px;
+                        opacity: 0.6;
+                    }
+                }
+                &.reload {
+                    &:hover {
+                        background-position: -37px -38px;
+                        height: 10px;
+                        top: -5px;
+                        width: 12px;
+                        opacity: 0.6;
+                    }
+                }
+                &.expand {
+                    &:hover {
+                        background-position: -123px -11px;
+                        width: 10px;
+                        height: 6px;
+                        top: -5px;
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+        & > .tile-footer {
+            background-color: #eceff1;
+            color: #d1d3d9;
+            font-size: 13px;
+            padding: 8px 15px;
+        }
+        &.borderall {
+            border: 1px solid #e5e9ec;
+        }
+        &.border-left {
+            border-left: 1px solid #e5e9ec;
+        }
+        &.border-right {
+            border-right: 1px solid #e5e9ec;
+        }
+        &.border-top {
+            border-top: 1px solid #e5e9ec;
+        }
+        &.border-bottom {
+            border-bottom: 1px solid #e5e9ec;
+        }
+        hr {
+            margin: 10px 0px;
+            height: 1px;
+            border: none;
+            background-color: #f2f3f5;
+        }
+        label {
+            color: #9aa0ad;
+        }
+        & > .tiles-body {
+            & > .heading {
+                color: #000;
+            }
+        }
+        .tiles-body {
+            & > .description {
+                color: #8b91a0;
+            }
+        }
+    }
+    .settings-box {
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        padding: 1px 4px;
+    }
+    .heading {
+        font-size: 25px;
+        display: block;
+        font-family: @base-font-family-two;
+        font-weight: 600;
+        margin: 4px 0px;
+        .icon-grid {
+            top: 1px;
+            font-size: 31px;
+            position: relative;
+        }
+    }
+    p {
+        margin: 0 0 5px;
+    }
+    hr {
+        margin: 10px 0px;
+        height: 1px;
+        border: none;
+        background-color: #2b3038;
+    }
+    .tiles-body-overlay {
+        position: absolute;
+        z-index: 100;
+        padding: 19px 18px 17px 24px;
+        width: auto;
+    }
+    .progress {
+        width: 70%;
+        margin-bottom: 15px;
+    }
+    .iconplaceholder {
+        background-color: rgba(0, 0, 0, 0.28);
+        i {
+            color:  @color-white ;
+        }
+    }
+    & > .tiles-body {
+        & > .description {
+            font-size: 12px;
+            display: block;
+            color:  @color-white ;
+            display: table-cell;
+            vertical-align: middle;
+            -webkit-font-smoothing: antialiased;
+        }
+    }
+    .description {
+        i {
+            font-size: 21px;
+            color:  @color-white ;
+        }
+        .mini-description {
+            position: relative;
+            top: -5px;
+        }
+    }
+    label {
+        color:  @color-white ;
+    }
+    &.red {
+        background-color: @color-red;
+        .button {
+            background: #bf3938;
+            color: #f7bebe;
+        }
+    }
+    &.purple {
+        background-color: @color-purple;
+        .button {
+            background: #736086;
+            color: #d7d5d7;
+        }
+    }
+    &.blue {
+        background-color: @color-blue;
+    }
+    &.green {
+        background-color: @color-green;
+    }
+    &.black {
+        background-color: @sidebar-inner-ul-list-background;
+        .blend {
+            color: #8b91a0;
+        }
+        input {
+            background-color: rgba(0,0,0,0.35);
+            border: 0;
+        }
+    }
+    &.dark-blue {
+        background-color: #365d98;
+    }
+    &.light-blue {
+        background-color: #00abea;
+    }
+    &.light-red {
+        background-color: #f96773;
+    }
+    &.grey {
+        background-color: @base-light-four;
+    }
+    &.gradient-grey {
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(131,131,131,0.65) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(131,131,131,0.65)));
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(131,131,131,0.65) 100%);
+        background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(131,131,131,0.65) 100%);
+        background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(131,131,131,0.65) 100%);
+        background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(131,131,131,0.65) 100%);
+    }
+    &.gradient-black {
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65)));
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+        background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+        background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+        background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+    }
+    &.tiles-overlay-hover {
+        &:hover {
+            .tiles {
+                &.gradient-grey {
+                }
+            }
+        }
+    }
+    .blend {
+        color: rgba(0, 0, 0, 0.42);
+    }
+    .button {
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        padding: 3px 12px;
+    }
+}
+.tile-more-content {
+    background-color:  @color-white ;
+    .tiles-body {
+        padding: 19px 18px 17px 24px;
+    }
+}
+.row-fluid.side-content .tiles,.row-fluid .tile-content {
+    margin: 0;
+}
+.tile-footer {
+    background-color: rgba(0, 0, 0, 0.28);
+    color:  @color-white ;
+    font-size: 13px;
+    padding: 8px 15px;
+}
+.chart-wrapper {
+    padding-top: 40px;
+}
+.tiles.red  .settings-box, .tiles.red  .button {
+    background: #bf3938;
+    color: #f35958;
+}
+.tiles.purple  .settings-box,.tiles.red  .button {
+    background: #08897e;
+    color: transparent;
+}
+.tiles-chart {
+    position: relative;
+    .tiles-body {
+        position: absolute;
+        z-index: 100;
+        padding: 19px 18px 17px 24px;
+        .heading {
+            color: @color-primary;
+        }
+    }
+    .controller {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        z-index: 100;
+    }
+}
+.tiles-overlay {
+    width: 100%;
+    height: 100%;
+    &.auto {
+        width: auto;
+        height: auto;
+    }
+    &.green {
+        background-color: rgba(red(@color-green), green(@color-green), blue(@color-green), 0.8);
+    }
+    &.blue {
+        background-color: rgba(red(@color-blue), green(@color-blue), blue(@color-blue), 0.8);
+    }
+}
+.widget-item {
+    position: relative;
+    &.narrow-margin {
+        .margin-right(-10px);
+    }
+    .controller {
+        position: absolute;
+        display: block;
+        z-index: 100;
+        &.right {
+            right: 20px;
+            top: 20px;
+        }
+        &.left {
+            left: 10px;
+            top: 10px;
+        }
+        a {
+            position: relative;
+            background: url('../img/icon/portlet-tray.png') no-repeat;
+            transition: all 0.1s linear 0s;
+            display: inline-block;
+            &.remove {
+                background-position: -66px -38px;
+                height: 10px;
+                top: -5px;
+                width: 10px;
+            }
+            &.config {
+                background-position: -3px -32px;
+                height: 22px;
+                width: 22px;
+            }
+            &.reload {
+                background-position: -37px -38px;
+                height: 10px;
+                top: -5px;
+                width: 12px;
+            }
+            &.expand {
+                background-position: -123px -11px;
+                width: 10px;
+                height: 6px;
+                top: -5px;
+            }
+            &:hover {
+                &.collapse {
+                    background-position: -95px -40px;
+                    height: 7px;
+                    top: -5px;
+                    width: 9px;
+                }
+            }
+        }
+    }
+    &.white {
+        .controller {
+            a {
+                &.remove {
+                    &:hover {
+                        background-position: -66px -38px;
+                        height: 10px;
+                        top: -5px;
+                        width: 10px;
+                        opacity: 0.6;
+                    }
+                }
+                &.config {
+                    &:hover {
+                        background-position: -3px -32px;
+                        height: 22px;
+                        width: 22px;
+                        opacity: 0.6;
+                    }
+                }
+                &.reload {
+                    &:hover {
+                        background-position: -37px -38px;
+                        height: 10px;
+                        top: -5px;
+                        width: 12px;
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+}
+.widget-item .controller  a:hover.remove,.widget-item .controller a:hover.config,.widget-item .controller  a:hover.reload,.widget-item .controller a:hover.expand,.widget-item .controller  a:hover.collapse {
+    opacity: 0.50;
+}
+.widget {
+    display: block;
+    .margin-right(-10px);
+    .widget-title {
+        display: block;
+        padding: 10px;
+        padding-bottom: 14px;
+        background-color:  @color-white ;
+        color: #e5e9ec;
+        text-align: center;
+        font-weight: bold;
+        &.dark {
+            background-color: #1b1e24;
+            color:  @color-white ;
+            .controller {
+                a {
+                    &.remove {
+                        background-position: -66px -9px;
+                        height: 10px;
+                        top: -5px;
+                        width: 10px;
+                    }
+                    &.config {
+                        background-position: -3px -32px;
+                        height: 22px;
+                        width: 22px;
+                    }
+                    &.reload {
+                        background-position: -38px -9px;
+                        height: 10px;
+                        top: -5px;
+                        width: 12px;
+                    }
+                }
+            }
+        }
+        &.blue {
+            background-color: #0090D9;
+            color:  @color-white ;
+        }
+        &.red {
+            background-color: #F35958;
+            color:  @color-white ;
+        }
+        &.green {
+            background-color: @color-green;
+            color:  @color-white ;
+        }
+        &.purple {
+            background-color: #736086;
+            color:  @color-white ;
+        }
+    }
+    .widget-body {
+        display: block;
+        background-color:  @color-white ;
+        padding: 15px 25px;
+    }
+    .controller {
+        position: relative;
+        display: inline-block;
+        float: right;
+        top: 6px;
+        .margin-right(8px);
+        a {
+            position: relative;
+            background: url('../img/icon/portlet-tray.png') no-repeat;
+            transition: all 0.1s linear 0s;
+            display: inline-block;
+            &.remove {
+                background-position: -66px -38px;
+                height: 10px;
+                top: -5px;
+                width: 10px;
+            }
+            &.config {
+                background-position: -3px -32px;
+                height: 22px;
+                width: 22px;
+            }
+            &.reload {
+                background-position: -37px -38px;
+                height: 10px;
+                top: -5px;
+                width: 12px;
+            }
+            &.expand {
+                background-position: -123px -11px;
+                width: 10px;
+                height: 6px;
+                top: -5px;
+            }
+            &:hover {
+                &.collapse {
+                    background-position: -95px -40px;
+                    height: 7px;
+                    top: -5px;
+                    width: 9px;
+                    background-position: -95px -40px;
+                    height: 7px;
+                    top: -5px;
+                    width: 9px;
+                }
+                &.remove {
+                    background-position: -66px -9px;
+                    height: 10px;
+                    top: -5px;
+                    width: 10px;
+                }
+                &.config {
+                    background-position: -3px -32px;
+                    height: 22px;
+                    width: 22px;
+                }
+                &.reload {
+                    background-position: -38px -9px;
+                    height: 10px;
+                    top: -5px;
+                    width: 12px;
+                }
+                &.expand {
+                    background-position: -123px -11px;
+                    width: 10px;
+                    height: 6px;
+                    top: -5px;
+                }
+            }
+        }
+    }
+}
+.widget .widget-title.dark .controller  a.reload:hover, .widget .widget-title.dark .controller  a.remove:hover {
+    opacity: 0.5;
+}
+.weather-widget {
+    overflow: hidden;
+    .big-icon {
+        width: 120px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 23px;
+        margin-bottom: 8px;
+    }
+    .small-text-description {
+        position: relative;
+        top: -9px;
+    }
+}
+.weather-widget-big-text {
+    font-size: 54px !important;
+}
+.widget-stats {
+    padding-left: 0;
+    display: inline-block;
+    .wrapper {
+        margin: 5px 0 5px 0;
+        border-right: 1px solid #363a41;
+        margin-right: 7px;
+        padding-right: 7px;
+        &.transparent{
+            border-right: 1px solid rgba(0,0,0,0.2);
+        }   
+        &.last {
+            border: 0;
+        }
+    }
+    .item-title {
+        font-size: 12px;
+    }
+    .item-count {
+        font-size: 15px;
+        color:  @color-white ;
+        display: block;
+        font-weight: bold;
+    }
+}
+.market-share-widget-innerscroller{
+    height: calc(~'100% - 110px');
+}
+//SALES GRAPH //
+.sales-graph-heading{
+    padding-left: 45px;
+    padding-top:35px;
+}
+
+/* Metro JS */
+.live-tile, .list-tile, .copy-tile{
+    height: 100%;
+}
+.live-tile, .list-tile, .copy-tile, .tile-strip .flip-list > li{
+    margin: 0;
+    width:100%;
+}
+.live-tile p, .list-tile p, .copy-tile p{
+    padding: 0;
+}
+
+h4.custom-line-height {
+    line-height: 25px;
+}
+
+.hover-effect-img {
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.tiles:hover .hover-effect-img {
+    -moz-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+    filter: contrast(130%);
+    -webkit-filter: contrast(130%);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .tiles.adjust-text p {
+        font-size: 10px;
+    }
+
+    .tiles.adjust-text h3 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .tiles.adjust-text p {
+        font-size: 14px;
+    }
+}

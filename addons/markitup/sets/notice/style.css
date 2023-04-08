@@ -1,0 +1,196 @@
+/* -------------------------------------------------------------------
+// markItUp!
+// By Jay Salvat - http://markitup.jaysalvat.com/
+// ------------------------------------------------------------------*/
+.markItUp .markItUpButton1 a {
+	background-image:url(images/h1.png); 
+}
+.markItUp .markItUpButton2 a {
+	background-image:url(images/h2.png); 
+}
+.markItUp .markItUpButton3 a {
+	background-image:url(images/h3.png); 
+}
+.markItUp .markItUpButton4 a {
+	background-image:url(images/h4.png); 
+}
+.markItUp .markItUpButton5 a {
+	background-image:url(images/h5.png); 
+}
+.markItUp .markItUpButton6 a {
+	background-image:url(images/h6.png); 
+}
+.markItUp .markItUpButton7 a {
+	background-image:url(images/paragraph.png); 
+}
+
+.markItUp .markItUpButton8 a {
+	background-image:url(images/bold.png);
+}
+.markItUp .markItUpButton9 a {
+	background-image:url(images/italic.png);
+}
+.markItUp .markItUpButton10 a {
+	background-image:url(images/stroke.png);
+}
+
+.markItUp .markItUpButton11 a {
+	background-image:url(images/list-bullet.png);
+}
+.markItUp .markItUpButton12 a {
+	background-image:url(images/list-numeric.png);
+}
+.markItUp .markItUpButton13 a {
+	background-image:url(images/list-item.png);
+}
+
+.markItUp .markItUpButton14 a {
+	background-image:url(images/picture.png); 
+}
+.markItUp .markItUpButton15 a {
+	background-image:url(images/link.png);
+}
+
+.markItUp .fonts a  {
+    background-image:url(images/fonts.png);
+}
+
+.markItUp .clean a {
+	background-image:url(images/clean.png);
+}
+.markItUp .preview a {
+	background-image:url(images/preview.png);
+}
+
+.markItUp .palette a {
+	background-image:url(images/colors.png);
+}
+	.markItUp .palette ul {
+		width:81px;
+		padding:1px;	
+	}
+	.markItUp .palette  li {
+		border:1px solid white;
+		width:25px;	height:25px;
+		overflow:hidden;
+		padding:0px; margin:0px;
+		float:left;
+	}
+	.markItUp .palette ul a {
+		width:25px;	height:25px;
+	}
+	.markItUp .palette ul a:hover {
+		background-color: none;
+	}
+	
+	.markItUp .palette .col1-1 a {
+		background:#FCE94F;
+	}
+	.markItUp .palette .col1-2 a {
+		background:#EDD400;
+	}
+	.markItUp .palette .col1-3 a {
+		background:#C4A000;
+	}
+	
+	.markItUp .palette .col2-1 a {
+		background:#FCAF3E;
+	}
+	.markItUp .palette .col2-2 a {
+		background:#F57900;
+	}
+	.markItUp .palette .col2-3 a {
+		background:#CE5C00;
+	}
+	
+	.markItUp .palette .col3-1 a {
+		background:#E9B96E;
+	}
+	.markItUp .palette .col3-2 a {
+		background:#C17D11;
+	}
+	.markItUp .palette .col3-3 a {
+		background:#8F5902;
+	}
+	
+	.markItUp .palette .col4-1 a {
+		background:#8AE234;
+	}
+	.markItUp .palette .col4-2 a {
+		background:#73D216;
+	}
+	.markItUp .palette .col4-3 a {
+		background:#4E9A06;
+	}
+								
+	.markItUp .palette .col5-1 a {
+		background:#729FCF;
+	}
+	.markItUp .palette .col5-2 a {
+		background:#3465A4;
+	}
+	.markItUp .palette .col5-3 a {
+		background:#204A87;
+	}
+
+	.markItUp .palette .col6-1 a {
+		background:#AD7FA8;
+	}
+	.markItUp .palette .col6-2 a {
+		background:#75507B;
+	}
+	.markItUp .palette .col6-3 a {
+		background:#5C3566;
+	}
+	
+	.markItUp .palette .col7-1 a {
+		background:#EF2929;
+	}
+	.markItUp .palette .col7-2 a {
+		background:#CC0000;
+	}
+	.markItUp .palette .col7-3 a {
+		background:#A40000;
+	}
+	
+	.markItUp .palette .col8-1 a {
+		background:#FFFFFF;
+	}
+	.markItUp .palette .col8-2 a {
+		background:#D3D7CF;
+	}
+	.markItUp .palette .col8-3 a {
+		background:#BABDB6;
+	}
+	
+	.markItUp .palette .col9-1 a {
+		background:#888A85;
+	}
+	.markItUp .palette .col9-2 a {
+		background:#555753;
+	}
+	.markItUp .palette .col9-3 a {
+		background:#000000;
+	}
+    
+.markItUp .table a {
+	background-image:url(images/table.png);
+}
+.markItUp .table-col a {
+	background-image:url(images/table-col.png);
+}
+.markItUp .table-row a {
+	background-image:url(images/table-row.png);
+}
+
+.markItUp .save a {
+    background-image:url(images/disk-save.png);
+}
+
+.markItUp .images a {
+    background-image:url(images/images.png);
+}
+
+.markItUp .newline a {
+    background-image:url(images/arrow_undo.png);
+}

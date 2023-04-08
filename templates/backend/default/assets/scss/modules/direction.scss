@@ -1,0 +1,387 @@
+/*!
+* direction.less v0.1.0
+*/
+
+// Local vars
+
+$rtl: ~`"${direction}" === 'rtl' ? 'true' : 'false'`;
+$left: ~`${rtl} ? 'right' : 'left'`;
+$right: ~`${rtl} ? 'left' : 'right'`;
+
+
+// "border-color:" rule
+
+.border-color($top, $right, $bottom, $left){
+	@if $rtl{
+		border-color: $top $left $bottom $right;
+	}
+	@else {
+		border-color: $top $right $bottom $left;
+	}
+}
+
+
+// "border-left*:" rule
+
+.border-left($left){
+    @if $rtl{
+        border-right: $left;
+    }
+    @else {
+        border-left: $left;
+    }   
+}
+
+.border-left-color($left){
+    @if $rtl{
+        border-right-color: $left;
+    }
+    @else{
+        border-left-color: $left;
+    }
+}
+
+.border-left-style($left){
+    @if $rtl {
+        border-right-style: $left;
+    }
+    @else{
+        border-left-style: $left;
+    }
+
+} 
+
+.border-left-width($left){
+    @if $rtl{
+        border-right-width: $left;
+    }
+    @else{
+        border-left-width: $left;
+    }
+}
+
+
+// "border-right*:" rule
+
+.border-right($right){
+    @if $rtl{
+        border-left: $right;
+    }
+    @else{
+        border-right: $right;
+    }
+}
+
+.border-right-color($right){
+    @if $rtl{
+        border-left-color: $right;
+    }
+    @else{
+        border-right-color: $right;
+    }
+}
+
+.border-right-style($right){
+    @if $rtl{
+        border-left-style: $right;
+    }
+    @else{
+        border-right-style: $right;
+    }
+}
+
+
+.border-right-width($right){
+    @if $rtl{
+        border-left-width: $right;
+    }
+    @else{
+        border-right-width: $right;
+    }
+} 
+
+// "border-style:" rule
+
+.border-style($top, $right, $bottom, $left){
+    @if $rtl{
+        border-style: $top $left $bottom $right;
+    }
+    @else{
+        border-style: $top $right $bottom $left;
+    }
+} 
+
+// "border-width:" rule
+
+.border-width($top, $right, $bottom, $left){
+    @if $rtl{
+        border-width: $top $left $bottom $right;
+    }
+    @else{
+        border-width: $top $right $bottom $left;
+    }
+} 
+
+// "border-radius:" rule
+
+.border-top-left-radius($radius){
+    @if $rtl{
+        -webkit-border-top-right-radius: $radius;
+	   -moz-border-radius-topright: $radius;
+	   border-top-right-radius: $radius;    
+    }
+    @else{
+       -webkit-border-top-left-radius: $radius;
+       -moz-border-radius-topleft: $radius;
+	   border-top-left-radius: $radius;
+    }    
+} 
+
+.border-top-right-radius($radius){
+    @if $rtl{
+        -webkit-border-top-left-radius: $radius;
+        -moz-border-radius-topleft: $radius;
+        border-top-left-radius: $radius;
+    }
+    @else {
+       -webkit-border-top-right-radius: $radius;
+	   -moz-border-radius-topright: $radius;
+	   border-top-right-radius: $radius;
+    }
+} 
+
+.border-bottom-left-radius($radius){
+    @if $rtl{
+        -webkit-border-bottom-right-radius: $radius;
+        -moz-border-radius-bottomright: $radius;
+        border-bottom-right-radius: $radius;
+    }
+    @else{
+        -webkit-border-bottom-left-radius: $radius;
+        -moz-border-radius-bottomleft: $radius;
+        border-bottom-left-radius: $radius;
+    }
+}
+
+.border-bottom-right-radius($radius){
+    @if $rtl{
+        -webkit-border-bottom-left-radius: $radius;
+        -moz-border-radius-bottomleft: $radius;
+        border-bottom-left-radius: $radius;
+    }
+    @else{
+        -webkit-border-bottom-right-radius: $radius;
+        -moz-border-radius-bottomright: $radius;
+        border-bottom-right-radius: $radius;
+    }
+} 
+
+// "clear:" rule
+
+.clear($side: both){
+    @if not $rtl and not ($side = left) and not ($side = right){
+        clear: $side;
+    } 
+
+.clear(left){
+    @if $rtl{
+        clear: right;
+    }
+}
+
+.clear(right){
+    @if $rtl{
+        clear: left;
+    }
+}
+
+// "direction:" rule
+
+.direction() {
+	direction: $direction;
+}
+
+.direction($dir){
+    @if not $rtl and not ($dir = ltr) and not ($dir = rtl){
+        direction: $dir;    
+    }
+}
+    
+.direction(ltr){
+    @if $rtl{
+        direction: rtl;
+    }
+}
+
+.direction(rtl){
+    @if $rtl{
+        direction: ltr;
+    }
+}
+
+// "left:" rule
+
+.left($left){
+    @if $rtl{
+        right: $left;
+    }
+    @else{
+        left: $left;
+    }
+} 
+
+// "float:" rule
+
+.float() {
+	float: $left;
+}
+
+
+
+.float($float){
+    @if not $rtl and not ($float = left) and not ($float = right){
+        float: $float;
+    }   
+}
+
+.float(left){
+    @if $rtl{
+        float: right;
+    }
+}
+
+.float(right){
+    @if $rtl{
+	   float: left;
+    }
+}
+
+
+// "margin:" rule
+
+.margin($top, $right, $bottom, $left){
+    @if $rtl{
+        margin: $top $left $bottom $right;
+    }
+    @else{
+        margin: $top $right $bottom $left;
+    }
+} 
+
+.ie7-margin($top, $right, $bottom, $left){
+    @if $rtl{
+        *margin: $top $left $bottom $right;
+    }
+    @else{
+        *margin: $top $right $bottom $left;
+    }
+} 
+
+// "margin-left:" rule
+
+.margin-left($left){
+    @if $rtl{
+        margin-right: $left;
+    }
+    @else{
+        margin-left: $left;
+    }
+} 
+
+.ie7-margin-left($left){
+    @if $rtl{
+        *margin-right: $left;
+    }
+    @else{
+        *margin-left: $left;
+    }
+}
+
+// "margin-right:" rule
+
+.margin-right($right){
+    @if $rtl{
+        margin-left: $right;
+    }
+    @else{
+        margin-right: $right;
+    }
+}
+
+.ie7-margin-right($right){
+    @if $rtl{
+        *margin-left: $right;
+    }
+    @else{
+        *margin-right: $right;
+    }
+}
+
+// "padding:" rule
+
+.padding($top, $right, $bottom, $left){
+    @if $rtl{
+        padding: $top $left $bottom $right;
+    }
+    @else{
+        padding: $top $right $bottom $left;
+    }
+}
+
+// "padding-left:" rule
+
+.padding-left($left){
+    @if $rtl{
+        padding-right: $left;
+    }
+    @else{
+        padding-left: $left;
+    }
+}
+
+// "padding-right:" rule
+
+.padding-right($right){
+    @if $rtl{
+        padding-left: $right;
+    }
+    @else{
+        padding-right: $right;
+    }
+} 
+
+// "text-align:" rule
+
+.text-align() {
+	text-align: $left;
+}
+
+.text-align($align){
+    @if not $rtl and not ($align = left) and not ($align = right){
+        text-align: $align;
+    }
+}
+
+.text-align(left){
+    @if $rtl{
+        text-align: right;
+    }    
+}
+
+.text-align(right){
+    @if $rtl{
+	   text-align: left;
+    }
+}
+
+
+// "right:" rule
+
+.right($right){
+    @if $rtl{
+        left: $right;
+    }
+    @else{
+        right: $right;
+    }
+}

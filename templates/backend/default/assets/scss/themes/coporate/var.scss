@@ -1,0 +1,97 @@
+
+
+
+$base-img-url: "../../../img";
+//Font
+$base-font-family: 'Arial';
+$base-font-family-two: 'Open Sans';
+$base-font-color:#6f7b8a;
+$base-font-size:13px;
+
+//Global Colors
+
+//Grey Color Pallete
+$base-light-default:#edecec;
+$base-light-two:mix($base-light-default, #fff, 78%);
+$base-light-three:mix($base-light-default, #fff, 50%); //e0e5e7
+$base-light-four:mix($base-light-default, #fff, 35%); //e9ecee
+$base-light-five:mix($base-light-default, #fff, 20%); //f3f4f5
+$base-light-six:mix($base-light-default, #fff, 15%); //f6f7f8
+
+$default-border-color:#e5e9ec;
+
+//Colors
+$color-primary-grey:#e7e7e7;
+$color-primary-black-overlay:#6f6f6f; //#000 with 53% Opacity
+
+$color-white: #ffffff;
+$color-dark : #1B1E24;
+$color-green: #00bc9a;
+$color-green-dark: $color-green;
+$color-blue: #37b0e9;
+$color-yellow: #f7cf5e ;
+$color-red: #f35958;
+$color-grey: #8b91a0;
+$color-black: #1b1e24;
+$color-purple: #6d5eac;
+
+$color-primary:#00bc9a;
+$color-primary-hover:#438a85;
+$color-primary-dark:#438a85;
+$color-primary-light:#f3faf8;
+
+$color-success:#37b0e9;
+$color-success-hover:#246a8e;
+$color-success-dark:#246a8e;
+$color-success-light:#ebf6fb;
+$color-succss-inverse:#1f3853;
+
+$color-danger:#f35958;
+$color-danger-dark:#e76e70;
+$color-danger-hover:#e76e70;
+$color-danger-light:#fff6f4;
+$color-important: $color-danger;
+
+$color-warning:#f7cf5e;
+$color-warning-hover:#ce8f22;
+$color-warning-dark:#ce8f22;
+$color-warning-light:#fffcee;
+$color-warning-luminous:#fdd01c;
+
+$color-info:#1f3853;
+$color-info-dark:'';
+$color-info-light:'';
+
+//Typo Vars
+$heading-font-color-light:#505458;
+$heading-font-color-dark:#282323;
+
+//Layout
+//Sidebar
+$sidebar-header-color:#fff;
+$sidebar-header-iconset-background:#fff;
+$sidebar-header-iconset-background-active:#fff;
+$sidebar-header-iconset:url('${base-img-url}/icon/top-tray-b.png') no-repeat ;
+$sidebar-header-iconset-2x:url('${base-img-url}/icon/top-tray-bx2.png') no-repeat ;
+$sidebar-color:#323237;
+$sidebar-link-color:#b2b2b2;
+$sidebar-link-hover:$sidebar-color;
+$sidebar-inner-ul-list-background:#3c3c41;
+$sidebar-inner-link-hover:$sidebar-color;
+$sidebar-footer-color:#2c2c2f;
+$sidebar-width-width:250px;
+$sidebar-condensed-width:50px;
+
+//Form Elements
+$input-active-background-color:#f4f5f7;
+$input-active-bordrer-color:#f1f1f1;
+
+//Page Global
+$page-header-color:#fff;
+$page-content-color:$base-light-three;
+
+//Table
+$table-body-background:#fafafc;
+$table-hover-background:#edecec;
+$table-border:#f1f1f1;
+
