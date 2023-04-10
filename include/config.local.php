@@ -1,7 +1,7 @@
 <?php
 defined('_VALID') or die('Restricted Access!');
-$config['site_name'] = 'Adult Video Script';
-$config['site_title'] = 'Adult Video Script';
+$config['site_name'] = 'AVSCMS';
+$config['site_title'] = 'AVSCMS';
 $config['admin_name'] = 'admin';
 $config['admin_pass'] = 'admin';
 $config['noreply_email'] = 'noreply@yourdomain.com';
@@ -18,7 +18,7 @@ $config['img_max_width'] = '384';
 $config['img_max_height'] = '216';
 $config['max_display_size'] = '400';
 $config['max_video_size'] = '300000000';
-$config['phppath'] = '/usr/local/php/bin/php';
+$config['phppath'] = '/usr/local/bin/php';
 $config['ffmpeg'] = '/usr/local/bin/ffmpeg';
 $config['ffprobe'] = '/usr/local/bin/ffprobe';
 $config['thumbs_tool'] = 'ffmpeg';

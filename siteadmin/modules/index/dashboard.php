@@ -105,8 +105,8 @@ for ($i=6; $i>=0; $i--) {
 	if ($i!=0) $f_chart=$f_chart.",";
 }
 
-$news = @file_get_contents('http://www.adultvideoscript.com/adminnews.txt');
-$version_lva = @file_get_contents('http://www.adultvideoscript.com/latestversion.txt');
+$news = @file_get_contents('https://www.avscms.com/adminnews.txt');
+$version_lva = @file_get_contents('https://www.avscms.com/latestversion.txt');
 $version_c = AVS_VERSION.'.'.AVS_PATCHLEVEL;
 $load = sys_getloadavg();
 
@@ -119,7 +119,6 @@ $smarty->assign('news',$news);
 $smarty->assign('version_lva',$version_lva);
 $smarty->assign('version_c',$version_c);
 $smarty->assign('load',$load);
-
 $smarty->assign('err', $err);
 
 ?>

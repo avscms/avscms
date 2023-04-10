@@ -43,14 +43,14 @@
 		<div class="container">
 			<div class="d-none d-sm-block">
 				<div class="float-left">
-					<span>{t c='footer.copyright'} &#169; 2008-2020</span> <span class="text-highlighted">{$site_name}</span>
+					<span>{t c='footer.copyright'} &#169; 2008-2023</span> <span class="text-highlighted">{$site_name}</span>
 				</div>
 				<div class="float-right">
-					Powered by <a target="_blank" href="http://www.adultvideoscript.com">AVS</a>
+					Powered by <a target="_blank" href="http://www.avscms.com">AVSCMS</a>
 				</div>
 				<div class="clearfix"></div>
 			</div>
-			<div class="d-block d-sm-none"><span>{t c='footer.copyright'} &#169; 2008-2020</span> <span class="text-highlighted">{$site_name}</span><br />Powered by <a target="_blank" href="http://www.adultvideoscript.com">AVS</a></div>
+			<div class="d-block d-sm-none"><span>{t c='footer.copyright'} &#169; 2008-2023</span> <span class="text-highlighted">{$site_name}</span><br />Powered by <a target="_blank" href="http://www.avscms.com">AVSCMS</a></div>
 		</div>
 	</div>
 	<div id="alerts_bottom"></div>

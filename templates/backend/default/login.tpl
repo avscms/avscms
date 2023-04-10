@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <meta charset="utf-8" />
-<title>AVS - Admin Dashboard</title>
+<title>AVSCMS - Admin Dashboard</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta content="" name="description" />
 <meta content="" name="author" />
@@ -28,7 +28,7 @@
         <div class="col-md-7 col-md-offset-2 tiles white no-padding">
 		<form class="animated fadeIn" name="login" id="login" method="POST" action="login.php">
 		 <div class="p-t-30 p-l-30 p-r-30 p-b-20 xs-p-t-10 xs-p-l-10 xs-p-b-10"> 
-          <h2 class="normal">Sign in to AVS Admin Panel</h2>
+          <h2 class="normal">Sign in to AVSCMS Admin Panel</h2>
 				<p class="p-b-20">Please provide your admin username and password.</p>
 				<div class="row form-row">
 					<div class="col-md-6 col-sm-6 ">
