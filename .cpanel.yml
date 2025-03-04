@@ -1,0 +1,10 @@
+---
+deployment:
+  tasks:
+# Next line defines a DEPLOYPATH with the path to the document root of your website so that you will not have to enter it in each command manually:
+    - export DEPLOYPATH=/home/agrymlmx/repositories/avscms
+
+# This line copies the index.php file to deploy path - the document root of your website:
+    - cp index.php $DEPLOYPATH
+- cp <avscms> $DEPLOYPATH
+  - cp -r * $DEPLOYPATH
