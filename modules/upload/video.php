@@ -95,11 +95,9 @@ if ( isset($_POST['video_upload_started']) ) {
 			    else $PID = shell_exec("nohup $Command 2> /dev/null & echo $!");
 			    return($PID);
 			}
-				
-			$cgi = ( strpos(php_sapi_name(), 'cgi') ) ? 'env -i ' : NULL;
-			
+
 			// Proc
-            $cmd = $cgi.$config['phppath']
+            $cmd = $config['phppath']
 		    	." ".$config['BASE_DIR']."/scripts/convert_videos.php"
 		    	." ".$vdoname
 		    	." ".$video_id
